@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T14:33:51.649900",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 26, 2023 Understanding Data Classification October 26, 2023 Data is essential for all organizations regardless of its size. Whether its customer information, financial records, intellectual property, or proprietary research, data plays a significant role in the development of business strategies and driving innovation. However, this valuable resource comes with various challenges. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection,product_security_features,security_best_practices",
+    "usage": {
+      "prompt_tokens": 190,
+      "completion_tokens": 686,
+      "total_tokens": 876
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}
