@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T14:07:36.615281",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Data443 vs ComplyKEY MailMeter Comparing Data and Email Archiving Solutions Company Overview ComplyKey offers archiving and compliance solutions for both public and private sector organizations. Their main product, ComplyKey Control, features email archiving, eDiscovery functions, and storage management. It aims to meet organizational compliance needs and offers various deployment options, automation, and continuous support, catering to SMBs and larger enterprises. GAP analysis Data Archiving Security  Compliance Integration  Performance Analytics  User Experience Business Continuity Cloud  Tech Automated Archiving Email Archiving File Archiving On-Premise Data Archiving OCR Engine Attachment Parser Data Deduplication Compression Stub Files for Seamless Access Immutability Data443 Risk Mitigation Inc. Yes Yes Yes Yes Yes Yes Yes Yes No Yes ComplyKEY MailMeter No Yes Yes No No No No No No No Built-in Security Privacy Compliance HIPAA Compliance GDPR Compliance Audit Trails Automates Compliance Behavioral Anomaly Detection Automatic Email Remediation Threat Log and Explanation Business Email Compromise BEC Detection Vendor Email Compromise VEC Detection Encryption Capabilities Tamper-Free Archiving Data443 Risk Mitigation Inc. Yes Yes Yes Yes Yes Yes No No No No No Yes Yes ComplyKEY MailMeter Yes Yes No No No Yes No No No No No No No Azure AD Integration Multiple Integrations Network Control Client Compatibility Internal Indexers Scalability Fast Search Performance Auto-Disk Scaling Optimized Parser IT Time Optimization Search Functionality Data443 Risk Mitigation Inc. Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes ComplyKEY MailMeter No No No No No No No No No No No Comprehensive Insights Reporting Data Visualization and Understanding Real-Time Monitoring Data Monitoring User-Friendly UI File Server Management Quotation-based Pricing Subscription-based Pricing Free Trial Product Demo Data443 Risk Mitigation Inc. Yes Yes No Yes No Yes Yes Yes Yes Yes Yes ComplyKEY MailMeter No Yes No Yes Yes No No Yes No Yes No Centralized Management Migration Patrol Tracking Communication Mediums Supervision Reduce Storage Requirements Streamline E-Discovery Business Continuity Disaster Recovery Flexibility Adaptability Continuous Updates Flexible Licensing Data443 Risk Mitigation Inc. Yes Yes No No No Yes Yes Yes Yes Yes Yes Yes Yes ComplyKEY MailMeter No No No No No No Yes No No Yes Yes Yes No Cloud-Deployed Baseline Behavioral AI Data443 Risk Mitigation Inc. Yes No ComplyKEY MailMeter No No Source Links          Source Links          Integrations Microsoft 365 environments Exchange Eoogle Workspace IceWarp Smartbox.ai Supported Systems Cloud and On-Premise Email Platforms You might also find it interesting Data Archiving by Data443 Complete Competitive Analysis Learn More Download PDF If you have any discrepancies or suggestions, please use the form to submit any corrections or recommendations. Your feedback is valuable to us. Submit Corrections Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation",
+    "usage": {
+      "prompt_tokens": 680,
+      "completion_tokens": 390,
+      "total_tokens": 1070
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

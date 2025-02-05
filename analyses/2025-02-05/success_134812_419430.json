@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T13:48:12.233316",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo WordPress Plugins The CCPA Framework This plugin gives a simple and elegant interface to handle Subject Access Requests SARs for the California Consumer Privacy Act CCPA. In a few clicks, you can have a global privacy policy, enable and track consent management, track opt-in opt-out, enable a do not sell function and button, and a host of others. Read more The GDPR Framework This plugin gives a simple and elegant interface to handle Data Subject Access Requests DSARs for the General Data Protection Regulation GDPR. Read more LGPD Framework This plugin gives a simple and elegant interface to handle Subject Access Requests SARs for the Brazilian General Data Protection Law LGPD. Read more Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, privacy_policy",
+    "usage": {
+      "prompt_tokens": 253,
+      "completion_tokens": 395,
+      "total_tokens": 648
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

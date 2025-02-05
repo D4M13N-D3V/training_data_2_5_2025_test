@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T14:12:21.701882",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Data443 vs DNSBLs Comparing Threat Intelligence and IP Reputation Engine Solutions Company Overview DNSBL.info offers DNS-based blocklist DNSBL services to improve email security by mitigating spam threats. It provides real-time blocklist data to help organizations block spam, phishing, and other malicious emails. Designed for businesses, email service providers, and network administrators, it ensures reliable and accurate blocklist data to protect email communication. GAP analysis Support  Pricing Core Features Customization  Integration Data  Intelligence Analysis  Response Free Trial Demo Quotation-based Subscription-based Troubleshooting Assistance Data443 Risk Mitigation Inc. Yes Yes Yes Yes Yes DNSBLs Yes No Yes No Yes Real-Time Information Malware File Detection Phishing and Fraud Detection IP Threat Detection Early Detection Predictive Phishing Detection Data443 Risk Mitigation Inc. Yes Yes Yes Yes Yes Yes DNSBLs Yes No Yes Yes No No Customizable Categories Integration Flexibility Cloud Enabled Data443 Risk Mitigation Inc. Yes Yes Yes DNSBLs Yes No No Comprehensive Coverage Global Data Up-to-date Data Contextual Data Dynamic Threat Intelligence Machine Learning Data443 Risk Mitigation Inc. Yes Yes Yes Yes Yes Yes DNSBLs Yes No Yes No No No Incident Response Threat Prioritization Risk Score Data443 Risk Mitigation Inc. Yes Yes Yes DNSBLs No No No Source Links Source Links        Integrations NA Supported Systems Web Browesers Email security gateways Spam filters Network applications You might also find it interesting Threat InDepth by Data443 Complete Competitive Analysis Learn More Download PDF If you have any discrepancies or suggestions, please use the form to submit any corrections or recommendations. Your feedback is valuable to us. Submit Corrections Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,data_protection,threat_prevention,incident_response,technical_documentation",
+    "usage": {
+      "prompt_tokens": 452,
+      "completion_tokens": 401,
+      "total_tokens": 853
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}
