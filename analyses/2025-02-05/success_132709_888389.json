@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T13:27:09.792526",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Cyren URL Lookup API Protect against advanced phishing attacks Start for free Pricing  urls    url  cnn.com , categoryNames   News   ,  url  wordpress.com , categoryNames   Personal Sites , Computers  Technology   ,  url  dropbox.com , categoryNames   Personal Storage   ,  url  mypillsvalue.ru , categoryNames   Spam Sites   ,  url  my.yorku.ca , categoryNames   Education     Example URL Lookup API response The Cyren URL classification cloud processes over 1 billion URLs each day by analyzing web and email traffic on a global scale. Cyren categorizes URLs into 84 categories, including 13 security categories for web threats like phishing and malware. Combines machine learning, heuristics, and human analysis to provide real-time visibility with low false positives Proven accuracy and coverage  used by Google, Microsoft, and others Cost-effective implementation options  cloud API or high performance SDK Datasheet Cyren protects hundreds of millions of users against emerging threats every minute. The Cyren URL Lookup API is the fastest way to start categorizing the web. Choose the best edition for your needs and get started today! Free Trial Edition  0 30 Days 1,000 queries per month 10 requests per second rate limit 75 General categories 13 Security categories 30-day free evaluation Bulk API requests Start for free Base Edition  500 Month 5,000 queries per day 50 requests per second rate limit 75 General categories 13 Security categories Annual subscription Bulk API requests Get a Quote Security Edition  1500 Month 30,000 queries per day 50 requests per second rate limit 75 General categories 13 Security categories Annual subscription Bulk API requests Get a Quote Complete Edition  2100 Month 50,000 queries per day 50 requests per second rate limit 75 General categories 13 Security categories Annual subscription Bulk API requests Get a Quote Read the API documentation Do you need a fully integrated option or more queries? Contact our sales team for details about our URL classification SDK and other pricing options. Talk To Sales Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, threat_prevention, technical_documentation",
+    "usage": {
+      "prompt_tokens": 541,
+      "completion_tokens": 225,
+      "total_tokens": 766
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

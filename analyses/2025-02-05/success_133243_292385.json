@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T13:32:43.148243",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Classification Demo Get A Personal PoC For Yourself! Instant Data Classification Free  Overview Architecture Built-In Policies Create Classification Custom Policies Why Is Data Classification Important? Enhances Data Security You can think of data classification like putting labels on boxes in a storage room. By sorting our data based on how sensitive or important it is, we can make smarter choices about protecting it. For the really important stuff  like personal customer details  we can add extra locks and alarms like encryption and access controls. This way, were not just throwing a blanket security over everything were making sure that the most valuable data gets the proper treatment. Facilitates Compliance Data classification is our GPS in navigating the complexities of policies like GDPR and HIPAA. By sorting our data, it becomes much easier to see which bits need to follow which rules. Its like sorting laundry you dont wash your bright reds with your whites. Having a clear view of what sensitive data is where allows your organization to stay on the right side of the law. Improves Data Management Handling data well is key to getting things done efficiently. By classifying data, were basically organizing our digital filing cabinet, making it easier to find what we need, when we need it. This makes handling data, from storage to analysis, a smoother ride. Less clutter, less fuss. Data Identification Managers Architecture. Flexible and Comprehensive Built-In Policies for Data Classification. Extensive Policy Repository Our software includes a vast repository of over 1300 global privacy policies, covering 40 native languages. This extensive range allows for immediate, accurate classification across diverse data types and regions, eliminating the need for time-consuming language translation. Customizable Classification Rules Tailor your data classification to fit your unique needs. Our system allows you to mix, match, and modify existing policies to create new classification rules. This customization ensures a precise fit for your companys specific data environment. Setting Confidence Levels and Unique Count Minimums Gain control over classification accuracy. Adjust the confidence level to balance between precision and coverage, and set the unique count minimum to minimize false positives. This flexibility helps fine-tune the system to your organizations data landscape. Create a comprehensive classification, define its sensitivity levels, and establish east-to-use rules for its application. Create custom policies using our Built-In Rules to meet organizational needs while maximizing effectiveness. Instant Data Classification Classify your document in the most comprehensive repository of global privacy policies in the game. We scan against 1300 policies in 40 native languages, removing the time cost of language translation. No RegEx, classify in seconds, build technical policy controls to govern sensitive data and even deploy via Azure or AWS. Classify a Document Free Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443  Classify a Document FREE  Dive In and Try Me NOW! Try for Free Today! x\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, compliance_certifications, product_security_features, technical_documentation",
+    "usage": {
+      "prompt_tokens": 671,
+      "completion_tokens": 232,
+      "total_tokens": 903
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

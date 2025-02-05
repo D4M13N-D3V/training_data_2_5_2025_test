@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T13:26:38.883465",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Try  Buy Take the first step with Data443 today. Trial, download or purchase any product, fit completely for your needs. Buy Now Schedule My Assessment Cyren Website URL Category Checker Use our Website URL Category Checker to view current categories. Check Classification Data Archive Manager Enforce policy and secure solution for compliance and E-Discovery with email archiving functionality Start a Trial Data Identification Manager Classify, identify, and continuously monitor data on workstation Start a Trial Data Placement Manager Securely mange file transfers for scheduling, routing, formatting, and securely transmitting business-critical data over public and private networks Start a Trial Access Control Manager Create policy-driven contextual access control to discover, organize, and resolve access decisions with MFA, SSO, and Lifecycle Start a Trial Ransomware Recovery Manager Recover data and operating systems, and block lateral movement on endpoints Start a Trial or Buy Now Global Privacy Manager Simplify compliance, automate data discovery and mapping, and customize workflows Start a Trial Antivirus Protection Manager Certified by the leading authority - VB100, our AV engines block and mitigate against major threats. Deploy per workstationVDI, and grab our leading Ransomware Recovery Manager to recover any machine at any state Start a Trial or Buy Now Sensitive Content Manager Mitigate risk and intellectual property with secure content distribution to deploy a high level of content rights management controls, audit trails, and analytics Start a Trial Open Source Used by over 400,000 businesses and with over a million downloads. Enable privacy compliance, opt-in and DSAR requests quickly with a 1.5 minute setup Read more Questions about trials or purchasing? Get in touch with us Contact Us Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "compliance_certifications, data_protection, access_management, threat_prevention, incident_response, product_security_features",
+    "usage": {
+      "prompt_tokens": 448,
+      "completion_tokens": 411,
+      "total_tokens": 859
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

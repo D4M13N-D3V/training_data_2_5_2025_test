@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-02-05T13:23:54.406331",
+  "content": "Search Free Trial Get Demo Apache Phoenix Apache Pheonix is a relational database, that is open source with an SQL interface. Its basic purpose is to provide developers with quality-level optimizations in order to produce their data-driven applications. Apache Phoenix is the platform that allows its users to abstract data and then query it using SQL. Furthermore, it uses secondary indexes to provide speedy results without relying on row key designs. Why Apache Pheonix? The software is extremely fast and can query data in a matter of mere moments. These include scanning 100 million rows in just 20 seconds, which is beyond impressive. Apache Phoenix integrates the scalability of HBase and ease of SQL Query in order to give better and good performance. Security features include Free IPA Identity management, authentication with Apache Knox, and TLS Encryption. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443",
+  "categories": [
+    "product_security_features",
+    "access_management",
+    "privacy_policy",
+    "technical_documentation"
+  ],
+  "raw_response": "product_security_features,access_management,privacy_policy,technical_documentation"
+}
