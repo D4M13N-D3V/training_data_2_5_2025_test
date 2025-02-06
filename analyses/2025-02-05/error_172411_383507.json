@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-02-05T17:24:10.362108",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day July 27, 2021 Axie Infinity Player Wallets Targeted by Poisoned Google Ads Content July 27, 2021 The top NFT Ethereum-based game Axie infinity, is a Pokemon-like play-to-earn game that lets its users earn SLP Smooth Love Potion. This potion can be traded as a crypto currency and has recently reached its all-time high value of 0.40. Many people are trying to get into this hot crypto Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "error": {
+    "type": "ChunkedEncodingError",
+    "message": "Response ended prematurely",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\requests\\models.py\", line 820, in generate\n    yield from self.raw.stream(chunk_size, decode_content=True)\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\urllib3\\response.py\", line 1063, in stream\n    yield from self.read_chunked(amt, decode_content=decode_content)\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\urllib3\\response.py\", line 1219, in read_chunked\n    self._update_chunk_length()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\urllib3\\response.py\", line 1149, in _update_chunk_length\n    raise ProtocolError(\"Response ended prematurely\") from None\nurllib3.exceptions.ProtocolError: Response ended prematurely\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\distill_test_openrouter.py\", line 190, in _generate_response\n    response = requests.post(api_url, json=payload, headers=self.headers)\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\requests\\api.py\", line 115, in post\n    return request(\"post\", url, data=data, json=json, **kwargs)\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\requests\\api.py\", line 59, in request\n    return session.request(method=method, url=url, **kwargs)\n           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\requests\\sessions.py\", line 589, in request\n    resp = self.send(prep, **send_kwargs)\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\requests\\sessions.py\", line 746, in send\n    r.content\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\requests\\models.py\", line 902, in content\n    self._content = b\"\".join(self.iter_content(CONTENT_CHUNK_SIZE)) or b\"\"\n                    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\requests\\models.py\", line 822, in generate\n    raise ChunkedEncodingError(e)\nrequests.exceptions.ChunkedEncodingError: Response ended prematurely\n"
+  }
+}

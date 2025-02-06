@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:18:17.602547",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day January 14, 2025 Simplify Managed File Transfers with Data443 Success Story January 14, 2025 Data transfer, especially business-critical data transfer, is the lifeblood of any organization. But maintaining high availability for critical file transfers can be a big problem especially for companies operating in tough environments. That was the situation a leading financial services company found themselves in until they found the solution Data443s Data Placement Manager DPM. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 204,
+      "total_tokens": 416
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

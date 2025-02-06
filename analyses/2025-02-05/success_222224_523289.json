@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:20:47.486746",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Data Classification Fail Data Stolen at Apple Car February 1, 2019 Confidentiality Oaths and Stolen Secrets As Bloomberg first reported, an Apple Inc. engineer has been charged with stealing data from the company that contained car secrets for a prototype driverless car. Jizhong Chen had been working for Apple for about six months, signing a strict confidentiality oath upon being hired. According to another Apple employee, Chen was seen photographing within the secure facility January 11. Stealing Data Without Obstacles Worse than, perhaps, the photographs taken, were the 2,000 documents Chen backed up to his personal hard drive, including manuals and schematics for the Apple project. Data stolen included architecture diagrams and assembly drawings. Apple could have prevented any file stealing and data breach from both Chen and an additional Chinese engineer in July 2018 with data classification. Data classification solutions, like the industry-leading technology ClassiDocs , classify structured and unstructured data enabling the separation and classification by data set requirements. In other words, if all data is classified according to preset rules, the most sensitive and proprietary data would secure. When a breach attempt occurred, sensitive data would not be able to be transported, as it would be stopped by a DLP. The Data Classification Solution The most important information to take from this? Full-scale Data Classification solutions are a necessity for organizations in protecting their data, both proprietary and consumer based. Data443 provides a full suite of data security solutions to secure all data, at every point, every time. Dont find yourself in the same position as the countless companies like Apple, vulnerable to data leaks, exposing your organization to fines, leaked sensitive material, and loss of consumer confidence. Lets chat and assess your current data posture Data443 offers a suite of privacy governance and data protection solutions that enable your business to maintain compliance in a cost effective, efficient and easy to use manner. Contact Us today for a unique and customized data security plan thats right for your organization. ClassiDocs Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Opt-In or Opt-Out Which Route Should Your Organization Go? Compliant Productivity Embracing Millennial Communication Tools While Maintaining Compliance Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention",
+    "usage": {
+      "prompt_tokens": 564,
+      "completion_tokens": 537,
+      "total_tokens": 1101
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:39:05.211546",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day August 1, 2024 Meet ScamPup The New Best Friend of Scam Artists August 1, 2024 ScamPup refers to a growing trend in the scam world where scammers exploit the love and affection people have for furry friends. They create elaborate schemes, often using fake online pet listings or ads, to get victims to part with their money by buying a pet. The pet scamming industry has grown in the past few years as online pet adoption has become more popular and convenient. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security, threat_prevention",
+    "usage": {
+      "prompt_tokens": 226,
+      "completion_tokens": 477,
+      "total_tokens": 703
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

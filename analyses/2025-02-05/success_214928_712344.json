@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:49:14.430320",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day December 3, 2019 CCPA  Opportunities For Success December 3, 2019 The data governance landscape is rapidly changing across the United States every day  and on January 1st, 2020, a law that aims to provide consumers with more control and power over their personal information will be enacted. The California Consumer Privacy Act CCPA will change how business is done in the Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "privacy_policy, data_protection",
+    "usage": {
+      "prompt_tokens": 202,
+      "completion_tokens": 187,
+      "total_tokens": 389
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

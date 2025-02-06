@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T18:19:54.467292",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Email Hijacking Delivers Qakbot Malware August 4, 2022 Introduction Originally a banking Trojan that existed in the wild as early as 2007, Qakbot or QBot is a pioneer of malware as a service, which is continually maintained and developed to this day. While its main purpose is to steal banking credentials such as logins and passwords, it has also added functionalities to spy on financial operations, spread itself and install ransomware in compromised organizations to maximize revenue for cybercriminals. Email Hijacking Recently we have observed the following malware campaign exhibiting a man-in-the-middle MITM attack known as email hijacking, where malicious replies are inserted between existing legitimate email conversations. This kind of attack is commonly executed through compromised email accounts of users, who are most probably also infected with Qakbot. Figure 1. Qakbot malware infection chain Figure 2. Hijacked email thread Figure 3. Hijacked email reply The hijacked email message includes a link to a file, which looks related to alleged attachments discussed in the email conversation. To further lure the reader into clicking on the malicious download link, the threat actor purposefully saves the malicious payload in a password-protected ZIP file and mentions the password in the email message. The malicious link redirects the user to download a password-protected ZIP file that contains a malicious Windows Shortcut file LNK. Figure 4. Malicious LNK commands Once the downloaded ZIP file is extracted using the password provided in the email, and the contained Windows Shortcut file is executed, a JavaScript payload is downloaded and executed via wscript. the Qakbot DLL payload and execute it via regsvr32, the new variant makes use of JavaScript as an additional layer of execution, preventing security solutions from immediately detecting the final payload. The downloaded JavaScript payload is heavily obfuscated, making code analysis difficult. It includes obfuscation that hinders debuggers such as Visual Studio Code and browser source debuggers Chrome, Edge, and Firefox, causing them to raise exceptions that prevent the malware from running properly when debugged. Figure 5. Heavily obfuscated Qakbot javascript code Fortunately, we have an internal tool known as CyrenSE Cyren Script Emulator, which can emulate the obfuscated JavaScript malware and log script execution events, giving us a clearer view of the malicious behavior, as shown in the examples below. Figure 6. CyrenSE event log In this case, the JavaScript payload appears to have been included as an additional layer in the infection chain before downloading and executing the Qakbot payload which is usually delivered as executable Windows DLLs loaded via regsvr32. Unfortunately, the download links to the final malware payload are no longer accessible. The demonstrated infection chain shows a clear relation to previous Qakbot campaigns and may eventually lead to further delivery of ransomware to the intended targets. Recommendations As threat actors have become more sophisticated in the attack methods they use, implementing comprehensive email and network security has become essential for protecting your company from reputational damage, brand damage, data loss, and more. Cyren Inbox Security uses elaborate logic and remediation rules to protect its users effectively and without excess noise. Cyrens anti-phishing software solutions are designed with todays cybercrime concerns in mind. They utilize advanced anti-phishing technology to pick up and contain the most complex phishing tactics, protecting over a billion users against emerging threats. Indicators of Compromise Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Example Analysis of Multi-Component Malware Protect Office 365 Email from Ransomware Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, threat_prevention, security_best_practices, incident_response",
+    "usage": {
+      "prompt_tokens": 844,
+      "completion_tokens": 221,
+      "total_tokens": 1065
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

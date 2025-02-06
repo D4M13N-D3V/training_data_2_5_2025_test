@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:29:52.817525",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 31, 2017 Locky Revived  A Roundup of New Variants October 31, 2017 Locky, the ransomware which dominated 2016 and then disappeared for the first half of 2017, has been completely rescuscitated during the past three months with a series of new variants, and demanding three times the ransom rate. A possible reason for its disappearance and reemergence was explored in a recent Locky wiederbelebt  eine Zusammenfassung der neuen Varianten October 31, 2017 Locky, die Ransomware, welche 2016 dominiert hat und dann in der ersten Jahresh\u00e4lfte von 2017 verschwunden ist, wurde mit einer Reihe neuer Varianten in den vergangenen drei Monaten zu neuem Leben erweckt und fordert jetzt das Dreifache des L\u00f6segelds. Ein m\u00f6glicher Grund f\u00fcr sein Verschwinden und Wiederauftreten wurde im aktuellen Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention",
+    "usage": {
+      "prompt_tokens": 330,
+      "completion_tokens": 526,
+      "total_tokens": 856
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

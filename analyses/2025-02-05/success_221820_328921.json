@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:18:19.163969",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 12, 2020 DATA443 SCHEDULES BUSINESS UPDATE CONFERENCE CALL ON THURSDAY, NOVEMBER 19 AT 430 PM ET November 12, 2020 RESEARCH TRIANGLE PARK, NC, Nov. 12, 2020  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company, today announced that the Company will host a business update conference call on Thursday, November 19th at 430 PM ET. Investors and other interested Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "privacy_policy",
+    "usage": {
+      "prompt_tokens": 236,
+      "completion_tokens": 242,
+      "total_tokens": 478
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

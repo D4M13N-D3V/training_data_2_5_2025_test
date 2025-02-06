@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-02-05T20:42:28.263716",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day April 7, 2022 IRS Scams 2022 April 7, 2022 Tax scams are so prevalent that the United States Internal Revenue Service has published a very long FAQ page to warn people of the risks. As we approach the peak of the income tax season in the United States, we can expect cyber-criminals to increase their efforts to intercept tax Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "error": {
+    "type": "HTTPError",
+    "message": "401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\distill_test_openrouter.py\", line 177, in _generate_response\n    response.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\requests\\models.py\", line 1024, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions\n"
+  }
+}

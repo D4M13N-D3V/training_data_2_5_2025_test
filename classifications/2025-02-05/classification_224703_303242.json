@@ -1,0 +1,8 @@
+{
+  "timestamp": "2025-02-05T22:47:03.302990",
+  "content": "Search Free Trial Get Demo Day March 6, 2022 Crypter Malware A Deep Dive Into NSIS-Based Crypters March 6, 2022 We have been observing that malware is being distributed via NSIS-based crypter. Malware such as FormBook, AgentTesla, GULoader, just to name a few, have been using NSIS as their loader. We have seen several ways of obfuscation implemented with the installer that decrypts and directly loads the malware into memory Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443",
+  "categories": [
+    "threat_prevention"
+  ],
+  "raw_response": "threat_prevention"
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:35:05.204516",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day February 23, 2017 IAM Concept of the Week RBAC versus ABAC February 23, 2017 Introducing our new Concept of the Week blog series  Each week well define and explain the significance of a concept in the world of Identity and Access Management. This week lets discuss Role-Based Access Control RBAC and Attribute-based Access Control ABAC  both are popular approaches to determine who can access an organizations Engaging the Stakeholders of ECM February 23, 2017 Engaging the Stakeholders of ECM Engaging the Stakeholders of ECM In todays Digital Age, data and information are an organizations lifeblood What are the 3Q revenues from our best-selling product? How many workers under age 30 do we employ? How many software licenses in our IT enterprise are set to Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, access_management, security_best_practices, technical_documentation",
+    "usage": {
+      "prompt_tokens": 283,
+      "completion_tokens": 539,
+      "total_tokens": 822
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

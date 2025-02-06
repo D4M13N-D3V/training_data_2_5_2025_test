@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:29:12.189043",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Data443 vs Alpha Quantum Company Overview Alpha Quantum delivers products in AI, Natural Language Processing, and Machine Learning, including an AI Content Classification API based on the IAB standard. They also provide an Offline Categorization Database for clients preferring local data hosting. With capability in over 100 languages and the option for tailored categories, Alpha Quantum meets the needs of various industries, such as cybersecurity and brand protection, by offering adaptable solutions. GAP analysis Data and Analytics Security and Protection Technology and Integration Inspection and Monitoring Access and Subscription Custom Support Complementary Data Customizable Categories Global Language Support Subscriber Analytics Global Data Centralized Database Local Cache Continuous Tracking Up-to-Date Data Self-Learning Caches Data443 Risk Mitigation Inc. Yes No Yes No Yes Yes Yes Yes Yes Yes Alpha Quantum No Yes Yes Yes No Yes No No Yes No Real-Time Security Dynamic Classification Predictive Detection Zero-Hour Security SSL Categorization Brand Protection Protocol Compatibility Data443 Risk Mitigation Inc. Yes Yes Yes Yes Yes No Yes Alpha Quantum Yes No No No Yes Yes Yes API Integration Machine Learning Scalable AI Technology Context Awareness Data443 Risk Mitigation Inc. Yes No Yes No Alpha Quantum Yes Yes No No Web Coverage Internet Coverage Granular Content Inspection Social Media Link Scraper TextSMSChat Monitoring Parked Domains Detection Data443 Risk Mitigation Inc. Yes Yes No No No No Alpha Quantum Yes Yes No No No No Free Trial Demo Quotation-based Subscription-based Data443 Risk Mitigation Inc. Yes Yes Yes Yes Alpha Quantum No Yes Yes Yes Local Responses User Identity-based Policies Industry-specific Solutions Cloud Architecture Security Alliance Applications Support Logo Extraction Competitor Identification Data443 Risk Mitigation Inc. Yes No Yes Yes Yes Yes No No Alpha Quantum No No Yes Yes No Yes No No Source Links Source Links             Integrations Digital products Advertising targeting AdTech Data mining Workplace productivity SaaS applicationsplatforms Parental control Cybersecurity Web filtering Search engine optimization Website categorization Brand protection Legal compliance Marketing research Content moderation Supported Systems Web browsers AdTech platforms Data analytics platforms Applications Content Management Systems You might also find it interesting Web Security Engine by Data443 Complete Competitive Analysis Learn More Download PDF If you have any discrepancies or suggestions, please use the form to submit any corrections or recommendations. Your feedback is valuable to us. Submit Corrections Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,data_protection,access_management,threat_prevention,privacy_policy,technical_documentation",
+    "usage": {
+      "prompt_tokens": 572,
+      "completion_tokens": 509,
+      "total_tokens": 1081
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:26:58.122889",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day May 16, 2023 Data443 Reports 125 Increase in Revenues, 184 Increase in Gross Profit for Q1 2023 May 16, 2023 RESEARCH TRIANGLE PARK, NC  May 16, 2023  via IBN Data443 Risk Mitigation, Inc. OTCPKATDS Data443 or the Company, a data security and privacy software company for All Things Data Security, today announces operating results for the first quarter ended March 31, 2023. Financial Highlights for the First Quarter Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "privacy_policy",
+    "usage": {
+      "prompt_tokens": 232,
+      "completion_tokens": 285,
+      "total_tokens": 517
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

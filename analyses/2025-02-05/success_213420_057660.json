@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:34:16.003734",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 16, 2023 What are the Challenges of Data Classification November 16, 2023 Data classification comes with various challenges. Todays organizations grapple with diverse data classification levels. They are inundated with extensive volumes of data. As this volume amplifies, its management becomes paramount. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security,data_protection",
+    "usage": {
+      "prompt_tokens": 182,
+      "completion_tokens": 284,
+      "total_tokens": 466
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

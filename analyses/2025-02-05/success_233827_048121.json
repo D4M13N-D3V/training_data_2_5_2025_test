@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:36:59.371741",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 17, 2016 Why your email isnt as secure as you think it is November 17, 2016 Recent headlines are chock-full of reports of email phishing attacks by cybercriminals who outwit employees to obtain sensitive personal data and financial information. Under the guise of recognized web payment and productivity tool requests, hackers lure potential victims into clicking on fake email links that are designed to steal credentials HTTPS is now over 50 of internet traffic  are we safer? November 17, 2016 The era of HTTPS Everywhere After years of calling for HTTPS Everywhere on the web and encouraging websites to use HTTPS by default, Google officials say the effort has begun to pay off. New data released at the end of October 2016 shows that more than 50 of all pages Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security, data_protection, security_best_practices",
+    "usage": {
+      "prompt_tokens": 280,
+      "completion_tokens": 501,
+      "total_tokens": 781
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

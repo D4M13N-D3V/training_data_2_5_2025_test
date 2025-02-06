@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:12:48.261666",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day August 17, 2021 Alert Fraudsters Stealing Bank Account Details via Fake Facebook Pages August 17, 2021 I recently received an SMS notification from my bank about possible fraudulent activity on my credit card account. While waiting for an agent to take my call, I browsed through Facebook to look for their support page. Unfortunately, I found two pages that looked almost exactly alike. The difference Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security, threat_prevention, incident_response, privacy_policy",
+    "usage": {
+      "prompt_tokens": 203,
+      "completion_tokens": 661,
+      "total_tokens": 864
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

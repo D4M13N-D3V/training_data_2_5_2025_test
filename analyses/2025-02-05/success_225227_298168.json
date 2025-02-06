@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:49:59.541027",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Why is the security industry telling you that your users should protect themselves? June 11, 2018 Im a technology marketer, and the annual Infosecurity and RSA security events are an opportunity for me to understand what my peers and competitors are saying to customers and potential customers. This year, as always, the events were similar. My takeaway from both is that many in the industry appear to be telling customers to shift the burden of protection to the end-user. As usual, my walk around the exhibit halls turned up a massive number of vendors whose booth messaging was completely incomprehensible. Im sure you looked at many booths and still did not know what problem the vendor might solve for you. Others did far better, with straight-forward headlines stating what they do. Some used games to attract people, and some, magicians, including Cyren. We thought it a fun way to engage and our magicians act was closely linked to our theme of How do you know your security is working? You know your security is not working when you focus all your efforts on blaming users for successful attacks. Yes, user training does form part of a defence-in-depth strategy, but a small part, and it only works if you continuously reinforce it using professional training companies. Doing this right is not within everyones budget. Yet there were an abundance of companies touting training, specifically to help detect email phishing threats. Is this really the users responsibility? We dont expect them to delete their own spam or avoid clicking executable malware attachments, but we seem to have given up on technologys ability to block phishing. And we actually get two attempts at doing so  when the email arrives over the email channel and when the user connects to the phishing site over the web channel. Surely at least one of either the email or the web security controls can protect the users. Not only are these user-education companies telling us that users are the weak link, but some of the larger infosec companies are too, with booths decked in messaging suggesting that protection starts with people. I agree that we should be thinking about how users work, what they do and how it affects the security posture of the business, but does security really start with them? Should IT not be an enabler to help them be more productive and should security not just protect them invisibly? The answer is, of course, yes. My advice is do not let your email security vendor get away with delivering phishing emails to your users  they should just block them. Do not let your web security vendor get away with allowing users to connect to phishing sites  they should just block the connections. Do you know whether they are or not? It is difficult to tell because your users might be giving away login credentials or other information and they may never realise. Cyren can help you understand if your security is working Try our Web Security Diagnostic Find out more about Email Security Gap Analysis Spend a few minutes to review our security event presentation Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Double Deceit Bad Things Come in Pairs Data Breach Report Underscores Phishing Risk for Manufacturers Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, threat_prevention, data_protection",
+    "usage": {
+      "prompt_tokens": 750,
+      "completion_tokens": 641,
+      "total_tokens": 1391
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

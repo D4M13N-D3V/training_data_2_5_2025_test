@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:34:55.992325",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Point, Click and Hack  Phishers Try Wix April 7, 2017 Wix allows anyone to create a free website with simple point, click and drag formatting. Of course, anyone can include phishers and malware distributors, and we at the Cyren Security Lab discovered earlier this week just such abuse of a Wix page targeted at Office 365 users, the subject of this article in InfoWorld . Once we notified Wix, they immediately removed the page, but its a critical reminder that a no trust philosophy is paramount when it comes to web security, even and especially when accessing a brand you trust, like Wix. The advantages for the phisher of using Wix are Free hosting of the phishing page Because the domain is very popular, it isnt blocked by many URL filtering and web security products The phishing site, which targeted Office 365 users, was very simple and did not use phishing-related terms  we believe based on the assumption that Wix would scan for these and take down the site. As shown above, the phishing site consisted of a screenshot of an Office 365 login page with login fields overlaid on the screenshot. There is, therefore, no text on the page relating to Microsoft or Office 365  its all image-based. Also the password field is actually spelled with two vs, as in pass vv ord. The separation of the image and the fillable phishing fields is clearly shown when accessed on a mobile device Cyren Web Security and URL filtering users are protected from this and similar threats. Evidently web platform services providers need to be vigilant and constantly review opportunities to enhance security for their customers and those customers users. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Students Targeted by Test Prep SEO Attack Its Baaack! Dridex Targets UK With a New Set of Guns Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security,product_security_features,security_best_practices,threat_prevention,technical_documentation",
+    "usage": {
+      "prompt_tokens": 496,
+      "completion_tokens": 298,
+      "total_tokens": 794
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

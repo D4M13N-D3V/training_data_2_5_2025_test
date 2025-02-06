@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:16:35.544272",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 12, 2020 Email spoofing BEC attack targeting numerous employees at once October 12, 2020 Spear-phishing spoofed attacks have been and remain one of the most substantial cyber threats that organizations face nowadays. And once we talk about spear-phishing, we cant help but mention business email compromise BEC attacks which if successful result in staggering losses for the companies the FBIs Internet Crime Complaint Center Phishers abusing Google App Engine October 12, 2020 Over the last few weeks Cyren has observed a massive spike in phishing sites hosted on the appspot.com domain that Google uses for its free Google App Engine. Taking advantage of soft routing on Google App Engine Google App Engine is a cloud-based development platform used to host and develop Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, incident_response, data_protection, end_user_security",
+    "usage": {
+      "prompt_tokens": 275,
+      "completion_tokens": 289,
+      "total_tokens": 564
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

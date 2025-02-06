@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:32:09.171328",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day September 21, 2017 Ransomware-as-a-Service Is Making Crime Easy September 21, 2017 It shouldnt surprise anybody to learn that cybercriminals are taking their lead from some established business service models. We wrote about Botnet distribution services here, and the concepts apply equally to other corners of the malware industry. In February 2016, the Cerber ransomware first appeared in the form of Ransomware-as-a-Service Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention",
+    "usage": {
+      "prompt_tokens": 215,
+      "completion_tokens": 507,
+      "total_tokens": 722
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

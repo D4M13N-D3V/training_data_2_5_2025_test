@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:42:33.759963",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Cyrens Email Security Engine for IP Reputation February 14, 2022 The challenges of keeping unwanted network traffic outside of the network perimeter is never-ending. Spammers and hackers are continually evolving and changing their methods to evade traditional perimeter cybersecurity solutions. Messaging security vendors can achieve unprecedented performance and detection levels, and block zombie traffic before it even enters customer networks. Utilizing the worlds most comprehensive email security network, Cyrens GlobalView, our embedded IP Reputation real-time analysis will Identification  Identify hundreds of thousands of new compromised accounts and host computers everyday. Tracking  Continuously track traffic from tens of millions of different IP addresses. Classification  Accurately classify billions of email messages per week in real-time. A Global View Of IP Reputation Cyrens GlobalView Security Cloud combines historical and up-to-the-minute sender IP reputation data from its highly diverse traffic sources in every country. It also uses coverage from managed services and network hardware devices to desktop software. Our patented Recurrent Pattern Detection RPD technology aggregates this high-level view of all senders automatically, distinguishing between legitimate corporate senders, valid publishers, compromised devices , spammers, and phishing and malware distributorssites. The Scale Of The Zombie Problem for IP Reputation The following illustrates the scale and scope of the challenge for IP reputation posed by compromised host computers Compromised computers send 85 of all spam, an estimated 120 billion messages a day Around 200,000-500,000 compromised computers come alive everyday A typical botnet sends up to 1 billion messages in a few hours There are typically 10,000200,000 compromised computers in a single botnet 510 million compromised computers are active on any given day Why Use Cyrens IP Reputation Intelligence? Ease of Use With this tool you can quickly and easily expand your messaging or other security solution breadth and value. Customer Retention Maintain customer loyalty by improving service levels. Sales Increases Improve sales margins by adding solution value. Reduce Costs Reduce your customers operational overhead  enabling higher throughput for their systems. Benefits For Your Customers and Overall IP Reputation Lower Resources Second-tier resource requirements are significantly reduced such as, hardware and network. Save Bandwidth and Enhance Performance By blocking 85 of unwanted traffic at the perimeter, bandwidth and resource use can be substantially reduced, which improves the Quality of Service for remaining traffic. Increase Security Filtering traffic from the devices that distribute and host viruses, worms and trojans before they can enter the network increases overall security. Eliminate False Positives When using rate-limits and temporary rejects, a measured response can virtually eliminate false positives. Improve Detection Overall detection rate is improved. How Cyrens IP Reputation Works for Email A partner device will identify an incoming SMTP connection request. The device then queries IP Reputation for information about the sender IP address. Based on these results that come from the GlobalView, the connection is accepted, tempfailed, perm- failed, or throttled. Final Thoughts Read the data sheet and learn how to use Cyrens Email Security Engine for IP Reputation with your products, today. Please visit our Threat InDepth page to learn about all of Cyrens cyber threat intelligence offerings. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Blocking Outbound Spam with Cyrens Email Security Engine What is Spyware? Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, threat_prevention",
+    "usage": {
+      "prompt_tokens": 776,
+      "completion_tokens": 368,
+      "total_tokens": 1144
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

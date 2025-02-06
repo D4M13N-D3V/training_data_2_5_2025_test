@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:49:39.512004",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 5, 2018 Survey Says 44 of Companies Phished This Year October 5, 2018 The third annual Cyren-Osterman Research U.S. security survey shows a significant increase in phishing emails getting through to users and in the number of successful phishing attacks suffered by businesses during the past 12 months, among many topics covered in the 16-page report, IT Security at SMBs 2017 Benchmarking Survey, Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, security_best_practices",
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 210,
+      "total_tokens": 422
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

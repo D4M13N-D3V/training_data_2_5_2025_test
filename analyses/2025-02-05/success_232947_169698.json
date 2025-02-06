@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:29:46.899070",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day September 26, 2017 What Is Data Discovery and Why Should I Use It? September 26, 2017 What Is Data Discovery and Why Should I Use It? The brain is an amazing organ. It weighs about 3 \u00bd pounds and consists of two hemispheres, 100 billion neurons, and 100 trillion synapses the command and control center for each of us. The brain controls autonomous functions like heartbeats What Is Data Discovery and Why Should I Use It? September 26, 2017 What Is Data Discovery and Why Should I Use It? The brain is an amazing organ. It weighs about 3 \u00bd pounds and consists of two hemispheres, 100 billion neurons, and 100 trillion synapses the command and control center for each of us. The brain controls autonomous functions like heartbeats Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "technical_documentation",
+    "usage": {
+      "prompt_tokens": 293,
+      "completion_tokens": 315,
+      "total_tokens": 608
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

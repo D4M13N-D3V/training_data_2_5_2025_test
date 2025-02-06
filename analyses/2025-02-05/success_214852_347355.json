@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:48:11.116608",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day May 10, 2021 Fake DocuSign Download Page Leads to Hentai Onichan Ransomware May 10, 2021 We recently received samples that we suspected were phishy in nature, but after analyzing the email attachment a severe threat was exposed. Figure 1.0 Email sample The emails had a ZIP attachment containing an HTML that was designed to look like an invoice signed by DocuSign, which is a well-known Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security, threat_prevention",
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 207,
+      "total_tokens": 419
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

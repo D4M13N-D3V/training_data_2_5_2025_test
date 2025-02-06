@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:32:00.788709",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day August 17, 2017 New Cyren Threat Report The Malware Wars August 17, 2017 If you want to know what a cyber-war looks like, read the news. And if you want to get up to speed quickly and try to make sense of all that news, I recommend downloading our new special report on malware, with a special nod to the included interview of Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention",
+    "usage": {
+      "prompt_tokens": 200,
+      "completion_tokens": 269,
+      "total_tokens": 469
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

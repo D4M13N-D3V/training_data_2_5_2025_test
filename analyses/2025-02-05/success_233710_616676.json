@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:36:48.027598",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Yuletide spam and shopping scams breaking records December 22, 2016 Fake Michael Kors shopping site ranks as the highest volume non-malware attack of 2016 Global business email traffic passing through Cyrens cloud security operations is unfortunately reinforcing Scrooges initial take on Christmas, as analysis done this week shows that Christmas-themed email is almost entirely commercial or criminal. Instead of bringing good tidings, it turns out that a whopping 78 of emails this past week with the word Christmas in the subject line are spam. Considering that Cyren inspects billions of emails every day, thats a lot of lumps of coal in inboxes. And it should surprise no one that emails containing links to fake shopping sites are also clogging your inbox this time of year, with the fashion spam category leading the way, trying to induce well-meaning gift givers to visit fake web sites like sneakernnz.com fake Nike, bootskest.com fake UGG, and baggoingdae.com fake Michael Kors. A spam attack this week for the fake Michael Kors shopping site ranks as the highest volume non-malware attack seen by Cyrens security cloud this year , that is to say, 1 for attacks not involving malicious email attachments its hard to compete with nearly 40 billion Locky ransomware-infected email attachments distributed in a single day. These sites wont infect your computer, theyll just steal your money. Traditional ransomware distribution volumes, by the way, are not up at all  which is actually not good news, since they continue at their normal, torrid pace. It only shows that the criminal gangs behind them dont take a holiday during the holidays. Want to learn more about cloud-delivered web security? Contact us here ! Try it for Free Instant Data Classification Cyren URL Category Chacker Prev On Demand Webinar  Botnets the Clone Armies of Cybercrime New Threat Report Everything you need to know about botnets Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, threat_prevention",
+    "usage": {
+      "prompt_tokens": 514,
+      "completion_tokens": 346,
+      "total_tokens": 860
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

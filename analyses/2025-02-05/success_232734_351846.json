@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:27:07.440885",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day August 21, 2019 Der Anstieg des Evasive Phishing durch Phishing-as-a-Service! August 21, 2019 Phishing-as-a-Service stellt benutzerfreundliche Phishing-Angriffstools und sogar vollst\u00e4ndige Kampagnen zu g\u00fcnstigen Preisen zur Verf\u00fcgung. Je nach Service-Level kostet ein Full-Service-Abonnement im Bereich von 50 bis 80 US-Dollar pro Monat und realistische Phishing-Web Kits stehen f\u00fcr nur 50 US-Dollar zum Download bereit. Das Cyren-Forschungslabor hat in diesem Jahr bereits 5.334 neue, einzigartige Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention",
+    "usage": {
+      "prompt_tokens": 261,
+      "completion_tokens": 461,
+      "total_tokens": 722
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

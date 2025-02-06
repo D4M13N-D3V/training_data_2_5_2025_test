@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:30:13.879137",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day May 12, 2020 You Should Enlist Your Employees in Threat Detection May 12, 2020 Your employees instincts are incredibly valuable and can help you crowdsource threats. With Cyren Inbox Security, theyre one click away from flagging an email as suspicious, and telling Cyren to search for lookalike emails in the system. How IDRs leverage user data Though its often positioned as the last line Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, threat_prevention",
+    "usage": {
+      "prompt_tokens": 207,
+      "completion_tokens": 375,
+      "total_tokens": 582
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

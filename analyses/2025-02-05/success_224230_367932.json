@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:42:28.312129",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day February 16, 2022 19 Best Practices for Securing Microsoft Office 365 February 16, 2022 Microsoft Office 365 is a massive platform that many businesses use. It is considered the worlds most popular office suite of productivity tools. Unfortunately, this means it is a hugely popular target for cyber-attackers as well. Microsoft Office 365 has a variety of effective built-in security features but it often Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "security_best_practices,end_user_security",
+    "usage": {
+      "prompt_tokens": 207,
+      "completion_tokens": 327,
+      "total_tokens": 534
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

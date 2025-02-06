@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:01:34.620070",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day September 6, 2019 Is The Email Security Industry About To Lose Another Major Vendor? September 6, 2019 Symantecs acquisition by Broadcom, announced recently, represents yet another major change for this cyber security vendor and service provider. Given the explicitly stated intention to focus only on the largest 2000 organisations globally, only time will tell what the impact will be on its smaller enterprise and mid-market customers. For Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 496,
+      "total_tokens": 704
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

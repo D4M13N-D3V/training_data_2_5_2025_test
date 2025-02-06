@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:29:12.594249",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Asana Asana is an advanced management tool that helps companies organize, communicate, track and manage their tasks, workflows and projects. It is a platform to bring different teams together in one place to collaborate and address issues. It is a flexible tool and ideal for managing multiple projects at the same time. It is suitable both short-term and long-term projects and for business of all sizes. WHY ASANA? The tool works best for both remote teams and onsite team to organize routine tasks and get updates on their progress Asana eliminates the need for constant team meetings, emails and memos to communicate and collaborate With Asana, Companies and teams become more efficient, move faster, confident, and productive. It aligns the projects with your business goals Asana has a mobile app for both IOS and Android that can come in handy It shares notes on task descriptions and upload attachment to tasks, organizes tasks by priority, establishes workflow, send due date reminders, and notifications on work completion and updates. Asana is easy to use and provide better solutions as it can integrate with a variety of apps such as Dropbox, Microsoft Teams, Office365, Google Drive, Gmail, Zoom, Outlook, etc It includes management and reporting tools that ensure success and smooth running of projects. Customization of dashboards allow each task to be tracked separately such as tracking customer queries or tracking job applicants It is very easy to navigate Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "privacy_policy",
+    "usage": {
+      "prompt_tokens": 400,
+      "completion_tokens": 636,
+      "total_tokens": 1036
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

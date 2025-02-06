@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:12:34.880185",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day December 30, 2019 Advantages of CCPA for Ecommerce December 30, 2019 The California Consumers Privacy Act CCPA is set to be indoctrinated on January 1st, 2020 and will transform the eCommerce marketplace in California  and the rest of the nation, as more states adopt the principals CCPA aims to set as standard. The laws being introduced are regarding the data businesses collect Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "privacy_policy, compliance_certifications, data_protection",
+    "usage": {
+      "prompt_tokens": 207,
+      "completion_tokens": 206,
+      "total_tokens": 413
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

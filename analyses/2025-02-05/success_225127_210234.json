@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:49:45.464393",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day April 25, 2022 What Are Office 365 Safe Attachments? April 25, 2022 Office 365 Safe Attachments is a feature of Microsoft 365 Advanced Threat Protection also known as Microsoft 365 Defender that provides another layer of protection to incoming emails by scanning its attachments for malicious software. Phishing emails and attacks are more prevalent than ever with the FBI Internet Crime Complaint What is a Zero-Day Phishing Attack? Identifying Vulnerabilities  More April 25, 2022 Zero-day is a term that broadly describes a series of recently discovered cybersecurity vulnerabilities hackers utilize to attack systems. This term, zero-day, often refers to the fact that the developers have just learned about the flaw. Hackers will exploit flaws they find before developers even have a chance to address Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, threat_prevention",
+    "usage": {
+      "prompt_tokens": 280,
+      "completion_tokens": 366,
+      "total_tokens": 646
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

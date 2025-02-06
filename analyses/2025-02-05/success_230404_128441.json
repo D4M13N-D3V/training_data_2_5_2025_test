@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:03:48.394822",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo GDPR Power to the People or What You Must Know about Data Subject Rights February 21, 2018 GDPR Power to the People or What You Must Know about Data Subject Rights As the May 25 date for GDPR General Data Protection Regulation implementation zooms closer, now is the time to review and understand your organizations responsibilities regarding the rights of data subjects also known as every person. GDPR requires organizations that collect, process, and store personal data  any personal data at all for any reason  to design and employ processes that protect data from either falling into the wrong hands or being misused by organizations who request it.Chapter 3 of GDPR protects individuals by setting forth specific rights regarding the acquisition, use, and storage of their personal information. The regulation is quite comprehensive and far reaching. Every organization that interacts with residents of the European Union, must comply with these rights, so you should know that every person has the right to Consent Companies may no longer use long, illegible terms and conditions the request for consent must be given in an intelligible and easily accessible form. Further, consent must be clear and distinguishable from other matters like purchases or newsletter signups and written in clear and plain language. The process for giving and withdrawing consent must be equally clear and easy. Access To increase transparency and empower data subjects, people now can obtain confirmation on whether their personal data is processed, for what purpose, and where it is stored. Further, a company controller must provide a copy of the personal data upon request, free of charge and in an electronic format. Rectification Individuals have the right to have incomplete or inaccurate data rectified, that is, corrected. Organizations storing and processing incomplete or inaccurate data must inform each recipient other organizations that received the incorrectinaccurate data of the rectification. If individuals ask, organizations must also inform the affected individuals about these recipients. Erasure Data subjects can request that a data controller the designated responsible party of an organization erase their personal data, cease data dissemination, and potentially halt third-party data-processing. This right requires controllers to compare the subjects rights to the public interest in the availability of the data when considering such requests. Restrict Processing Individuals have a right to block or suppress processing of personal data. When processing is restricted, organizations are permitted to store the personal data, but must stop additional processing. They can retain just enough personal information to ensure the restriction is respected. Data Portability GDPR introduces the right for data subjects to obtain and reuse their personal data for transmission to other controllers. This enables consumers to take advantage of applications and services that use specific data to find better deals. Object Individuals can object to processing based on tasks associated with the public interest or the exercise of official authority including profiling. Further, individuals can object to their data being used for direct marketing, research, and statistics. Additionally, Article 22 of the GDPR protects individuals against solely automated decision-making no human interface, especially in legal or other similarly significant matters. This includes algorithm-based profiling. GDPR assesses penalties for noncompliance up to 4 of annual global turnover or 20 million, whichever is greater, so there is terrific incentive to be ready for implementation on May 25. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev GDPR for Information Security Crazy numbers. Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy, end_user_security, compliance_certifications, security_best_practices, technical_documentation",
+    "usage": {
+      "prompt_tokens": 781,
+      "completion_tokens": 306,
+      "total_tokens": 1087
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

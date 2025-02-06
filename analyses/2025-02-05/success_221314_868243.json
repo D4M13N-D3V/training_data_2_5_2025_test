@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:12:41.902662",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day January 28, 2021 DATA443 EXTENDS COMPETITIVE ADVANTAGE WITH CONTINUED GROWTH OF ITS PUBLIC BRANDING SERVICES  DATA443 PRIVACY BADGE January 28, 2021 Continued New Milestones Reached as Unique Capabilities Adopted by Organizations RESEARCH TRIANGLE PARK, NC, Jan. 28, 2021  Data443 Risk Mitigation, Inc. OTCPK ATDS, a leading data security and privacy software company for ALL THINGS DATA SECURITY, is pleased to announce new milestones reached by its privacy compliance suite for Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, compliance_certifications",
+    "usage": {
+      "prompt_tokens": 239,
+      "completion_tokens": 484,
+      "total_tokens": 723
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

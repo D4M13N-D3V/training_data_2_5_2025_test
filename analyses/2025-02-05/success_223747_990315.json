@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:37:46.287270",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day January 12, 2022 Data443 Releases Antivirus Protection Manager, Meeting Demands for Expanded Security in Growing Hostile Environments January 12, 2022 Continues Investments in User Security Across Consumer and B2B Segments RESEARCH TRIANGLE PARK, NC, Jan. 12, 2022  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company, today announced the release of its newest data security solution, Data443 Antivirus Protection Manager, Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,threat_prevention,data_protection",
+    "usage": {
+      "prompt_tokens": 233,
+      "completion_tokens": 246,
+      "total_tokens": 479
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

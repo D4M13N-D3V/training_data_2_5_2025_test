@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:06:32.435601",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 27, 2017 10 Cyber Threat Terms Every IT Manager Should Know November 27, 2017 Do you know the difference between spear phishing and clone phishing andjust plain phishing? Or adware and malvertising? Check out the list below of the top 10 threat terms every employee should be familiar with, and familiarize yourself with more threat terms in Cyrens new online Cyber Threat Dictionary in Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security,threat_prevention,technical_documentation",
+    "usage": {
+      "prompt_tokens": 205,
+      "completion_tokens": 378,
+      "total_tokens": 583
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

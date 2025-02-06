@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:34:54.475211",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day May 24, 2017 CEO and Chairman of Cyren Shares Insight On The Evolving Security Market May 24, 2017 Lior Samuelson, Cyren CEO and Chairman, has been around technology and businesses for many years, but he is particularly passionate about making the Internet a safer place for users  especially those who seek better security and those on the move with their mobile devices. In this dont want to Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security, privacy_policy\n\nend_user_security, privacy_policy",
+    "usage": {
+      "prompt_tokens": 207,
+      "completion_tokens": 312,
+      "total_tokens": 519
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

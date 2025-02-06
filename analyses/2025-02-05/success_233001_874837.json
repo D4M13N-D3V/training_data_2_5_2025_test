@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:29:58.367570",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Malware Goes Currency Mining with Your CPU October 9, 2017 If you find your CPU spiking while browsing some website, it may be youve just loaned your computer resources to a virtual currency mining operation. The Pirate Bay website was caught having deployed such a miner on its site in mid-September, which borrows its visitors CPU andor graphics card resources  without informing the user. The Coinhive Miner deployed by The Pirate Bay is a JavaScript library for mining cryptocurrency that is being offered to websites as an alternative revenue stream. Malware Authors Move in on Mining With the rising popularity of cryptocurrencies, it stands to reason that malware authors will be shifting their attention to this new-found way of mining  a theory which became confirmed fact two weeks ago with the news that Showtime.com was found to be embedded with the same Coinhive script, but it would appear without Showtimes consent. Unfortunately, cyber criminals have started abusing this tool by embedding the JavaScript code into browser extensions or programs, thus using the processing power of the infected PCs for mining digital currency without permission. Cyren Lab Finds Many Examples Investigating further, we encountered several websites last week that were injected with a script code to redirect and download a program which uses the Coinhive script. Here is a list of some of the sites found by Cyren researchers with injected codes www.altenpflegeschule-manoah.de macelleriarosticceriatamborrino.it www.valoanaustin.com headabovethecloud.us getrich.webstilus.com.hrindex.phpupute-za-pocetnike105-kako-odraditi-pocetak-u-sfi-bez-ulaganja-novca www.advancedaquablasting.com.auindex.phpaboutfaqs58-question-1-what-are-your-environmental-qualifications www.ivylodgebedandbreakfast.co.ukindex.phpbooking How It Works The injected codes, as shown in the image below, redirect the user to two sites hxxprecaptcha-in.pw hxxpgoogle-statik.pwmainermyscr109881.js Figure 1 Injected code which redirects users The iFrame injected code, which redirects to recaptcha-in.pw, starts a miner script. Figure 2 Captured from recaptcha-in.pw The 2 nd injected script code will execute the script myscr109881.js from google-statik.pw. Figure 3 Decrypted code of myscr109881.js Cyren detects the relevant malicious code as JSCoinminer.A, JSRedir.ZS and JSKryptik.E!Eldorado. Filenames which are Indicators of compromise include myscr109881.js myscr532494.js For a primer on the current state of malware, read Cyrens free special threat report on malware . Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Survey Finds Security Investment Increasing, But Not Security Cyren Adds Email Archiving To SaaS Security Platform Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security,threat_prevention,privacy_policy,technical_documentation",
+    "usage": {
+      "prompt_tokens": 725,
+      "completion_tokens": 489,
+      "total_tokens": 1214
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

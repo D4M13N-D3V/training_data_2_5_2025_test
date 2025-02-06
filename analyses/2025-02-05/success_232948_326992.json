@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:29:47.655410",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo FileFacets Appoints Nuvias as EMEA Cyber Security Distributor November 22, 2017 OTTAWA, Nov. 22, 2017 CNW  FileFacets, a privacy compliance and enterprise analytics company, today announces the appointment of European IT distributor Nuvias as its sole cyber security distributor in EMEA. Through the partnership, FileFacets aims to drive international expansion and meet growing demand for its Enterprise ID data discovery products. FileFacets Enterprise ID offers an affordable and scalable Software-as-a-Service SaaS online platform for companies of all sizes. It performs advanced data discovery and content search of structured and unstructured data within corporate networks, servers, content management systems, email, desktops and laptops. Data privacy and security have never been more important, and businesses of all sizes are looking for practical, easy-to-use and affordable data search and discovery tools, said Chris Perram , CEO at FileFacets. With its presence in over 20 countries across EMEA and a proven track record in information security, this partnership with Nuvias will allow us to take our Enterprise ID solutions to major new markets. FileFacets is already available through all EMEA regions, but Nuvias will focus initially on the UK and northern mainland Europe including DACH, The Nordics, Hungary and Poland. About 2.5 quintillion bytes of data is created every day. Yet a recent Global Databerg Report suggested that 52 percent of all data stored by organisations globally is dark data, meaning its content and value is unknown. Additionally, 33 percent of data is considered redundant, which poses a serious threat given the EUs new laws regarding GDPR . When the laws come into place in May 2018, companies that neglect their data will be fined 4 per cent of the previous years annual global turnover or 20m, whichever is the higher . FileFacets easy-to-deploy, hybrid-cloud solution identifies sensitive and personal information, removes redundant data and facilitates the secure transfer between data repositories. Artificial Intelligence capabilities expedite the classification of content and execution of business processes to handle personal data. We are very pleased to announce this alliance and look forward to working with one another to deliver this mission. We will be working closely with our resellers to meet regional market requirements and provide local support for FileFacets, and help them scale, said Nuvias Groups EVP Cyber Security, Ian Kilpatrick . About FileFacets FileFacets is a Software-as-a-Service Saas platform that performs sophisticated data discovery and content search of structured and unstructured data within corporate networks, servers, content management systems, email, desktops and laptops. FileFacets Enterprise ID identifies sensitive information and personal data, removes redundant data and facilitates the secure transfer of content between repositories, mitigating risk and assisting businesses worldwide in their privacy compliance and data management efforts. About Nuvias Group Nuvias Group is the pan-EMEA, high value distribution business, which is redefining international, specialist distribution in IT. The company has created a platform to deliver a consistent, high value, service-led and solution-rich proposition across EMEA. This allows partner and vendor communities to provide exceptional business support to customers and enables new standards of channel success. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Chris Perram Interviewed as Part of Intralinks Deal Flow Protector FileFacets in MicroScope Article GDPR influencing channel relationships Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, compliance_certifications, data_protection",
+    "usage": {
+      "prompt_tokens": 822,
+      "completion_tokens": 332,
+      "total_tokens": 1154
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

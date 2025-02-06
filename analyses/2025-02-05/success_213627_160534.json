@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:36:23.081968",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day April 1, 2021 DATA443 ANNOUNCES NEW RANSOMWARE PRODUCT FOR ENDPOINTS IN RESPONSE TO ESCALATING INFECTION COSTS AND EXTORTION RISKS April 1, 2021 Capability Removes Requirement for Physical Interaction by IT Staff, Perfect for Hospitals, Schools, Government  Manufacturing RESEARCH TRIANGLE PARK, NC, April 01, 2021  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company, is pleased to announce that its latest privacy-centric Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,threat_prevention",
+    "usage": {
+      "prompt_tokens": 240,
+      "completion_tokens": 290,
+      "total_tokens": 530
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

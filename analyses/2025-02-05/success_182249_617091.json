@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T18:18:10.658684",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day June 23, 2020 Microsoft 365 Is Wildly Successful and Profoundly Vulnerable  Heres Why June 23, 2020 Microsoft 365 has been adopted and used at an enormous rate and now powers 600,000 companies in the United States alone. Also enormous? The 78 of Microsoft 365 administrators who reported successful security breaches, citing email phishing as the leading cause. Cloud inboxes are simply more vulnerable than on-premises email Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, threat_prevention",
+    "usage": {
+      "prompt_tokens": 217,
+      "completion_tokens": 385,
+      "total_tokens": 602
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

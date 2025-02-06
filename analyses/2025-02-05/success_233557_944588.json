@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:34:58.388411",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Cyren Unified Internet Security Goes Live March 27, 2017 Following on the heels of our February announcement , we are pleased to share here that Cyrens SaaS Internet security platform upgrade, Cyren Cloud Security 4.0, went live on March 26. Integrated Web and Email Security This release deepens the integration of our cloud-based enterprise security offerings  web security, email security, DNS-based security and cloud sandboxing  on a unified, globally-operated service platform. Weve enhanced our ability to exploit synergies in service delivery in new ways, and our deep platform integration in terms of threat detection and threat correlation across web, email and DNS traffic is positioned by this release to grow richer, get faster, and be even more effective. Advanced Email Protection and Shadow IT Discovery The platform upgrade also brings new service features with it. Among the highlights are Shadow IT discovery and cloud app usage reporting, incorporated into and a logical extension of the web security service and compelling new advanced threat protection capabilities for email security, most notably the full integration of our cloud-based sandboxing as an in-line layer of defense, first made available last year as part of the web security stack. Cyren Delivering SaaS Simplicity What this means to IT and security managers is that deploying and managing enterprise-grade security just got a whole lot simpler and a whole lot better at the same time. Thats the opportunity in moving security to the cloud, and what this release embodies  a step-change shift in the IT security curve in terms of speed and effectiveness. The old security model, focused on protecting the corporate network perimeter under the formerly true assumption that all relevant IT activity happened inside that perimeter, has been very obviously eroded by Internet access everywhere and the mobility of todays workforce, by the rise of SaaS business applications and movement of corporate data to the cloud, and by the changing nature of threats, which have adapted to these changes and are attacking users with new tactics to evade detection by traditional security appliances. The question is Considering the world has changed, has your approach to security changed with it? Shown above Unified threat dashboard for Cyren Web Security and Cyren Email Security Web and Email Security  More Effective Together The logic of the Cyren Cloud Security 4.0 platform, and the various services operating from it, reinforces that web surfing and email communications are overlapping domains from a security perspective. It follows that they shouldnt be managed in separate silos. Cyrens objective is clearly to help customers rationalize their approach and address their web and email security needs holistically  their Internet security needs, we might say more broadly  by giving them the possibility of managing their integrated defenses from a single administrative console, with the additional logical elements and benefits of what administering unified security services should really mean from an administrative perspective  integrated policy controls, integrated reporting, unified threat dashboards, streamlined user onboarding, etc. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Companion Ransomware  2-for-1 Malware Distribution Students Targeted by Test Prep SEO Attack Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, threat_prevention, security_best_practices, access_management, data_protection",
+    "usage": {
+      "prompt_tokens": 741,
+      "completion_tokens": 326,
+      "total_tokens": 1067
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

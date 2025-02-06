@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:18:23.291793",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 25, 2021 DATA443 TO EXHIBIT AND PARTICIPATE AT THE GARTNER SECURITY  RISK MANAGEMENT SUMMIT 2021 October 25, 2021 Will Feature Product Demonstration and Address Key Questions from CISOs and Security and Risk Executives RESEARCH TRIANGLE PARK, NC, Oct. 25, 2021  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company, today announced it will serve as a gold level Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, data_protection",
+    "usage": {
+      "prompt_tokens": 236,
+      "completion_tokens": 356,
+      "total_tokens": 592
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

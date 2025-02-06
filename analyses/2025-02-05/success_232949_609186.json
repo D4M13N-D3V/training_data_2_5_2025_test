@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:29:48.484662",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 24, 2017 Email Malware without Macros or Attachments  Beware Rogue Outlook Meeting Invites October 24, 2017 A new security vulnerability found in the Microsoft Office Dynamic Data Exchange DDE protocol is allowing malware authors to send macro-less malicious attachments and potentially even attachment-less malicious emails and calendar invites. The implications here are significant, given that many of todays security solutions rely on the ability to identify Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, end_user_security, technical_documentation",
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 302,
+      "total_tokens": 510
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

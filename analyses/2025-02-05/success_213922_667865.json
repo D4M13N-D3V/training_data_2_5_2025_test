@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:39:05.096782",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day January 6, 2020 Data443 Cancels 2,000,000 Common Shares Related to Litigation Settlement January 6, 2020 Shares Returned to Company Treasury RALEIGH, N.C., Jan. 06, 2020  Data443 Risk Mitigation, Inc. OTCPK ATDS, a leading data security and privacy software company, announced today that the Company has executed and confirmed the cancellation of 2,000,000 Common Shares post-split as part of a litigation settlement. Jason Remillard, Founder Keeping Costs Down In CCPA  Automation January 6, 2020 The California Consumer Privacy Act CCPA has the potential to be a major source of financial burden and headache to eCommerce businesses of all sizes and verticals. As consumers begin to grow more aware of their rights, businesses will be subject to an increasing amount of SARs, or, Subject Access Requests  and Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 306,
+      "completion_tokens": 335,
+      "total_tokens": 641
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

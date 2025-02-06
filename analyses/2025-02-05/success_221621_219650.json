@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:16:18.784030",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 7, 2021 DATA443 SECURES THE LARGEST CONTRACT IN ITS HISTORY WITH WORLDS LEADING MULTINATIONAL FINANCIAL SERVICES CORPORATION October 7, 2021 1.5M Prepaid by Customer with Additional Spending Commitments Follows Update on Accepted Application to List on Nasdaq RESEARCH TRIANGLE PARK, NC, Oct. 07, 2021  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company, announced in follow-up to its disclosure of Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "compliance_certifications, data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 241,
+      "completion_tokens": 253,
+      "total_tokens": 494
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

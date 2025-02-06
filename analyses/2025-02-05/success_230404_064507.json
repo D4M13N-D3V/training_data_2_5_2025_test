@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:03:48.091572",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day December 1, 2022 Phishing with QR codes December 1, 2022 Dont Scan or be Scammed By Maharlito Aquino, Kervin Alintanahin and Dexter To In 1994, a type of the matrix barcode known as the Quick Response code, now widely known as QR code, was invented by Masahiro Hara from a Japanese company Denso Wave. The purpose of the barcode was Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,threat_prevention",
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 230,
+      "total_tokens": 442
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

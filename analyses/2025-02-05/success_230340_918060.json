@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:03:40.238711",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day February 21, 2018 GDPR Power to the People or What You Must Know about Data Subject Rights February 21, 2018 GDPR Power to the People or What You Must Know about Data Subject Rights As the May 25 date for GDPR General Data Protection Regulation implementation zooms closer, now is the time to review and understand your organizations responsibilities regarding the rights of data subjects also known as every person. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 204,
+      "completion_tokens": 128,
+      "total_tokens": 332
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

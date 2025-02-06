@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:28:59.362749",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Endpoint Recovery Demo Get A Personal PoC For Yourself! Endpoint Management Enable Protection Update Client Recovery RRMs Smart Control platform offers efficient solutions for managing endpoints, making it easy for users to oversee one or multiple endpoints effortlessly. Lets explore how you can utilize it to block specific functionalities on an endpoint for enhanced protection. With Smart Control, you have the ability to toggle protection on or off for individual endpoints. This allows you to conveniently manage the protection of one or more endpoints simultaneously. Updating to the latest version of RRM throughout your organization is a straightforward process that can be completed in just a few simple steps. With Smart Controls streamlined update procedure, you can ensure that your entire network is equipped with the latest features and enhancements. Watch the video below to witness real-time recovery in action. VB100 Analysis Report We had independent experts test us  ask your current vendor why theyre not VB100 certified Review 2023 - PCMag Data443 Ransomware Recovery Manager - This well-conceived tool defeats most real-world ransomware Ransomware recovery for the when it happens event. 30-day Free Trial Buy now Stay one step ahead of cyber threats Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, data_protection, end_user_security, compliance_certifications, threat_prevention, incident_response",
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 225,
+      "total_tokens": 574
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

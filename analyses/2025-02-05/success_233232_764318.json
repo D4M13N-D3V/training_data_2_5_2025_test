@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:32:04.516158",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day May 31, 2017 Resilient IoT Guardian Unveiled to Protect Against Connected Threats May 31, 2017 Resilient Network Systems and RunSafe Security Announce Strategic Partnership, New Approach to IoT SecurityMay 31, 2017 0900 AM Eastern Daylight Time SAN FRANCISCOBUSINESS WIREResilient Network Systems, the contextual access control company, today announced a strategic partnership with RunSafe Security to offer a unique IoT security solutionResilient IoT Guardianfor both new and existing Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, access_management, threat_prevention",
+    "usage": {
+      "prompt_tokens": 231,
+      "completion_tokens": 307,
+      "total_tokens": 538
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

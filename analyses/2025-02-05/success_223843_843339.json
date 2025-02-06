@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:38:00.122602",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day July 16, 2020 Microsoft Finally Acknowledges COVID-19-Related Cybercrimes July 16, 2020 On July 7, Microsoft revealed theyve been working since December 2019 to wrest control of key domains used in vast cyber attacks in 62 countries. This particular phishing scheme used COVID-19-related lures to defraud Microsoft 365 customers. Its one of many attacks weve seen. With tensions high and IT resources Spear Phishing, Whaling, and Delayed Detonation, Oh My! July 16, 2020 Companies worldwide are up against sophisticated email attacks like Business Email Compromises BEC. These attacks are also known as spear phishing, impersonation, and whaling, with the goal of convincing an end-user to release money or provide account information. Related Microsoft 365 Is Wildly Successful and Profoundly Vulnerable  Heres Why How Machine Learning Is Building a Better Spam Trap July 16, 2020 Bad actors are constantly raising the ante on email scams. According to Microsoft, phishers have been quietly retaliating, evolving their techniques to try and evade protections. In 2019, we saw phishing attacks reach new levels of creativity and sophistication. To keep pace with these evasive attacks, threat protection software has Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention,product_security_features,end_user_security,data_protection",
+    "usage": {
+      "prompt_tokens": 384,
+      "completion_tokens": 441,
+      "total_tokens": 825
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

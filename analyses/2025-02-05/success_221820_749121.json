@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:18:19.542347",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 12, 2021 The Anatomy of a Phishing Email Attack October 12, 2021 Phishing scams are one of the most common ways hackers gain access to sensitive or confidential information. In fact, 75 of organizations around the world experienced some kind of phishing attack in 2020. But, what is phishing? A phishing attack includes sending fraudulent emails which appear to be coming Phishing Attack Prevention How to Avoid Phishing Attacks with Cyren Threat InDepth October 12, 2021 What is Phishing Attack Prevention? Phishing attack prevention refers to companies taking security measures in order to prevent phishing attacks on their employees. The measures taken to improve phishing protection can help you avoid detrimental impacts on your business. This makes phishing attack prevention more important than ever. With more Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, security_best_practices, end_user_security",
+    "usage": {
+      "prompt_tokens": 281,
+      "completion_tokens": 187,
+      "total_tokens": 468
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

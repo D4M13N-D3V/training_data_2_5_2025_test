@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:34:20.988862",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Continued development on Global Privacy Manager powered exclusively by ClassiDocs May 15, 2020 Data443 Risk Mitigation Development Blog by Damien O., Advanced Platform Developer at Data443 The past few weeks have been extremely busy for the developers of Global Privacy Manager that is powered exclusively by ClassiDocs  as we continue to implement new features and work on perfecting existing ones. We are also working on a completely new release, but unfortunately, I cannot say much about it right now But I can talk a little about the development process First, I want to talk about Global Privacy Manager, and the amazing developments that have been made over the past couple weeks and months. The software has really made a turn to user friendliness and user experience. We have had a lot of the functionality that we have been looking for with the software for a month or so, but we have been really pushing towards working on making the user experience better. The past week we have been working on making the end-user experience, our customers customer, a lot better  really revamping how things are laid out and design of the application. We are looking to start revamping the administrative side of the application over the coming weeks and get it to the same level of user experience as the end user. As I mentioned before we have started the development of a new product, which was started a few weeks ago. Since the start of that development we have made massive strides towards being able to bring it to production for everyone to use. We ran into a few problems such as having issues setting up the oAuth with the new shopping cart system due to OpenID Connect being updated too often and there being discrepancies between the version on the shopping cart system and the version that the oAuth library supports. We also ran into some issues with getting our classification libraries that detect when sensitive information is present in data all types of data  the core of ClassiDocs. The main issue  as always is with this stuff  is hooking the actual production versions to the documented features  always a mismatch! But after some work  we got them resolved. All I have to say is watch out for a new line of products and the enhancements coming out of Data443  big changes on the look and feel, customer journey and ability to order and consume them  easier, faster, cheaper! Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Multi-factor Authentication and Advanced Use Cases New Ordering System and Privacy Safe Seal Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, data_protection, access_management, threat_prevention",
+    "usage": {
+      "prompt_tokens": 618,
+      "completion_tokens": 379,
+      "total_tokens": 997
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

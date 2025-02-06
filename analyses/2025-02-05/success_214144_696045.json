@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:41:44.123344",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day December 27, 2019 How Does CCPA Affect Me?  Businesses in California December 27, 2019 With the California Consumer Privacy Act CCPA set to be indoctrinated January 1st, 2020, businesses that are operating in California that fall under rule of law must take action. Asking the question How Does CCPA Affect Me? should be the first step Ecommerce businesses are taking to fully understand the Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "privacy_policy,compliance_certifications",
+    "usage": {
+      "prompt_tokens": 212,
+      "completion_tokens": 110,
+      "total_tokens": 322
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

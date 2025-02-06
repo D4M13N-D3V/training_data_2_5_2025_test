@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:54:10.781538",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day April 26, 2022 Malicious Excel Add-in Variant Delivers Malware April 26, 2022 XLL is an Excel Add-in extension file that provides ways to use third-party tools and functions that are not available in Microsoft Excel. It is typically a Dynamic Link Library DLL file that can be loaded by Microsoft Excel provided the file uses the .xll extension. We have seen a Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "privacy_policy, technical_documentation",
+    "usage": {
+      "prompt_tokens": 203,
+      "completion_tokens": 415,
+      "total_tokens": 618
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

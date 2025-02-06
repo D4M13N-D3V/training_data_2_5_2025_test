@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:37:52.367738",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day January 26, 2019 CCPA Readiness Checklist Are You Protected? January 26, 2019 he California Consumer Privacy Act of 2018 CCPA becomes effective January 1, 2020, but organizations must have certain data protection policies in place now to comply with the new legislation. Modifications to current procedures and a solid understanding of legal requirements are essential to CCPA compliance. The CCPA increases Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "compliance_certifications, data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 206,
+      "completion_tokens": 267,
+      "total_tokens": 473
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

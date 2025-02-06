@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:18:25.574211",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 18, 2020 Data443 Announces Elimination of Warrants as Part of Settlement, Continues Path to Major Market Uplist  Updated November 18, 2020 Shareholder Friendly Transaction Removes Significant Derivative Liability Component RESEARCH TRIANGLE PARK, NC, Nov. 18, 2020  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company for ALL THINGS DATA SECURITY, is pleased to announce a settlement agreement with a long-term PIPE Data443 Announces Elimination of Warrants as Part of Settlment, Continues Path to Major Market Uplist November 18, 2020 Shareholder Friendly Transaction Removes Significant Derivative Liability Component RESEARCH TRIANGLE PARK, NC, Nov. 18, 2020  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company for ALL THINGS DATA SECURITY, is pleased to announce a settlement agreement with a long-term PIPE DATA443 REPORTS THIRD QUARTER 2020 RESULTS, CONTINUING RECORD GROWTH AND OPERATIONAL IMPROVEMENTS QUARTER ALSO INCLUDES RECORD CUSTOMER GROWTH AND INCREASING ANNUAL RECURRING REVENUE November 18, 2020 RESEARCH TRIANGLE PARK, NC, Nov. 18, 2020  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company for ALL THINGS DATA SECURITY, is pleased to announce results for its third quarter and nine months ended September 30, 2020, with continued accelerated Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 473,
+      "completion_tokens": 295,
+      "total_tokens": 768
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

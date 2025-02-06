@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:46:23.030925",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo New WordPress GDPR Framework update  1.0.18! October 23, 2018 BY JASON REMILLARD THIS WEEK WE RELEASED ANOTHER UPGRADE TO OUR MOST RECENT PRODUCT CAPABILITY  THE WORDPRESS GDPR FRAMEWORK . Hey everyone  just a quick update if you havent already been notified by your WordPress console yet that we have pushed out version 1.0.18. Although the feature list looks small  it packs a punch! 1.0.18 Classidocs Integration Checkbox conditional checked at admin We have extended the WordPress framework directly into ClassiDocs. So for the first time ever, from the WordPress site you may attach the service to ClassiDocs to extend the SAR queryremediation process into the data and enterprise realm. This means you can also attach your SAR process to all network, client and cloud drives  over 100 database types  and over 250 cloudSaaS application types mailchimp, salesforce, etc. Lots to come here, and we will demo this in our forthcoming webinar on this topic! In the meantime, for any questions contact us on livechat  www.data443.com or via our support portal at  You can download a copy here Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Release 1.0.14 is now available of The WordPress GDPR Framework Privacy Governance, Compliance and Data Stewardship  Cannabis? Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, data_protection, technical_documentation",
+    "usage": {
+      "prompt_tokens": 412,
+      "completion_tokens": 396,
+      "total_tokens": 808
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

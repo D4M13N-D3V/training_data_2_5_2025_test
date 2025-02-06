@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:36:46.990107",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day May 11, 2020 Data443 Releases New CCPA Framework Plugin for WordPress May 11, 2020 Plugin Based on Popular GDPR Solution with over 30,000 Active Installations for California Privacy Enforcement RALEIGH, N.C., May 11, 2020  Data443 Risk Mitigation, Inc. OTC ATDS, a leading data security and privacy software company, today announced the release of its world leading Data Privacy solution with 30,000 active installations Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, compliance_certifications, data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 220,
+      "completion_tokens": 377,
+      "total_tokens": 597
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

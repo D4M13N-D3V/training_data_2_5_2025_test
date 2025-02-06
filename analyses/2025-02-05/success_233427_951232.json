@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:34:00.811721",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day February 28, 2017 GovTech  Adventures and Observations in IAM Cross Boundary Policy Management in Cloud Environments February 28, 2017 Enabling Cross Boundary Policy Management in Cloud Environments by Daemon Price Its an interesting time to be in Government Technology. Join me here every few weeks where Ill share my observations on the latest technology happenings within the Beltway and across Government. Well discuss the latest trends in Identity and The NEW classification 101  The Why  The How February 28, 2017 In this post I will reiterate what we have been presenting to partners, analysts and customers alike  from a why we did this perspective to a how we did this approach. As covered in the previous post, we built this product primarily out of frustration being a user of Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "access_management",
+    "usage": {
+      "prompt_tokens": 281,
+      "completion_tokens": 206,
+      "total_tokens": 487
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

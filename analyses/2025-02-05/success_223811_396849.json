@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:37:50.588283",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo GDPR in 2019 Weve Only Just Begun January 25, 2019 E-mails, pop-ups, and opt-out messages flooded inboxes and browsers in 2018 as companies began to worry about consent governance and privacy regulation  and the business impact of non-compliance. The General Data Protection Act brought awareness and attention to data privacy across the world. When GDPR went into effect in May of 2018, there was a lot of hype surrounding the penalties, fines and repercussions wed see as a result of non-compliance. Then, it seemed like the conversation dried up and the priority for GDPR compliance within companies, while still important, didnt seem as critical as they had originally thought. However, yesterday we were all reminded that non-compliance with GDPR regulations carries a hefty price tag, as Frances top data-privacy agency, the CNIL issued the first major penalty against a US company for GDPR data privacy law violations. According to the Washington Post, the CNIL alleges Google did not fully disclose to users how their personal data is collected or how that data is eventually used. The result 57 million in fines. An Exponential rise in data privacy governance has increased data privacy driven complaints, creating a back log of grievances that data protection authorities must individually investigate before any fines or penalties are levied. In just the 7 months between the implementation of GDPR and the end of 2018, the UK Information Commissioners Office ICO received over 43,000 data protection complaints. The majority of the complaints received and ICO effort has been focused on data protection core issues that arent unique or new with GDPR like subject access requests. Consumers have been entitled to subject access requests and other basic data protections for years prior to the GDPR introduction. According to the IOC, complaints about subject access to personal data are up 98, wrongful disclosures up 131 and general data security complaints increased 179. If the ICO remains consistent in investigation practices as it has under other data protection legislation, like the Data Protection Act of 1998, we can expect to see a similar number of cases being upheld. The ICO upholds, on average, one-third of all complaints, meaning we could see in excess of 15,000 penalties enforced as a result of complaints from 2018 alone. Complaints waged against industry giants like Netflix, Amazon, and Apple are in the early stages of investigation. Penalties for these companies could result in billions of dollars in fines as a result of GDPR alone. But just as GDPR enforcement is getting started, countries around the world are making data privacy and data protection a top priority. Data Privacy laws are currently, or will go into effect within the next 12 months, include LGPD Brazil, CCPA US, PIPA Canada, PIPEDA Canada, PDPC Singapore, POPI South America, and dozens of other countries across the globe. 2018 might have been the kick off of data privacy regulation awareness, but 2019 will be in a league of its own with enforcement, penalties, increased regulation, and global policy reforms in the world of data security, privacy and protection. Dont wait to assess your compliance in every country you conduct business until youve already had a breach. Prepare now, and protect your companys future success. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Reginald Hyde, a decorated veteran of the Intelligence Community, joins Resilient as an Advisor CCPA Readiness Checklist Are You Protected? Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "compliance_certifications, data_protection, privacy_policy, end_user_security, security_best_practices",
+    "usage": {
+      "prompt_tokens": 824,
+      "completion_tokens": 302,
+      "total_tokens": 1126
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

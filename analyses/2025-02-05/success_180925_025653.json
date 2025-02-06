@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T18:07:46.385553",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day August 3, 2021 2021 Phishing  BEC Attacks August 3, 2021 Ive been very busy this summer, which is why Im just now reading the 2021 Verizon Data Breach Investigations Report. Here are a few takeaways from the section about the Social Engineering attack pattern read phishing. Phishing is responsible for the vast majority of breaches in this pattern, with cloud-based Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, security_best_practices, privacy_policy",
+    "usage": {
+      "prompt_tokens": 205,
+      "completion_tokens": 239,
+      "total_tokens": 444
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

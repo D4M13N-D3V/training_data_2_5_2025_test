@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:03:45.685636",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Blockchain  More than coin January 27, 2018 I read an interesting article today about some of the activities occurring at Davos this week. Robert Shiller made some interesting comments     however mostly centered around bitcoin itself. For sure  it has been a bumpy ride  and outside of hype and other reasons for the sudden interest  at its core we are talking about validations of blockchain and its ability to free information  whilst protecting it and giving owners control. Looks like there were over a dozen specific sessions on blockchain itself  which I find quite interesting considering this topic made agendas a few years back anywhere. More interesting to me from a product and compliance side was the joint announcement between Microsoft, Accenture and Hyperledger for the ID2020 Alliance   . Much more to come from this group  and I expect competing groups to crop up with different value propositions, etc. More interesting to us, is the blockchain conversation is starting to mature and get big enough  that is  having some large and lofty goals and encompassing truly needed user communities with capabilities that help on a very large scale call it  planet-wide. In this example, which I didnt know, over 1.1 billion people can not prove their identity  which as we know affects everything from immigration, work, safety, healthcare and more. Significant, game changing, mature. It will be interesting! Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Box  Security Best Practices for External Sharing on Content Collaboration Platforms Final day to vote! Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection,access_management,end_user_security,security_best_practices",
+    "usage": {
+      "prompt_tokens": 428,
+      "completion_tokens": 293,
+      "total_tokens": 721
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

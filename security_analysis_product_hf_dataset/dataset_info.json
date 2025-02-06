@@ -1,0 +1,41 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "instruction": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "input": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "output": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "metadata": {
+      "source": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "type": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "timestamp": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "categories": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "Sequence"
+      }
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

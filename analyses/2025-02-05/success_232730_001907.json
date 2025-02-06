@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:27:02.847278",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Do You Know the New PII Rights under GDPR? December 12, 2017 Do You Know the New PII Rights under GDPR? What is your current address? What was the yearly salary of your last position? What is your Social Security national insurance number? Consider how many PII personally identifiable information questions your organization asks for background checks of individuals being vetted as a candidate for a new position. These questions increase dramatically after the candidate is selected. How many of these questions are PII-related? PII is any information used to distinguish one person or another. Entering ones name, bank account, address or telephone number are necessary tasks to interact with businesses. However, each entry increases the risk of exposing this information to the wrong person. In May 2018, the European Union General Data Protection Regulation GDPR takes effect. The first comprehensive attempt at establishing data compliance standards across national economies, GDPR establishes timelines to notify users of data breaches and penalties for non-compliance. The regulation also details specific rights for citizens to access their own data and understand why its being collected, processed, and stored. The Four Pillars of Data Subject Rights GDPR mandates organizations design and implement data protection into their systems and processes. They must be able to identify and secure this information across the data lifecycle from collection and processing to analyzing and storage. Organizations will now be held responsible and accountable by policies that protect your PII rights across four pillars Right to Access Who has my information and what is it being used for? Individuals have the right to know which PII is being collected and processed, where it is stored, and why the organization needs it. Right to Be Forgotten Why are you processing my information when I am not associated with your organization? Individuals have the right to cease the processing and dissemination of their data. They also have the right to have their data deleted from an organizations system. Right to Data Portability Why do I have to answer the same PII questions multiple times? The public has the right to retain and reuse data across different applications and services. Organizational data networks must comply with portability and security standards to safely transfer PII within and across systems. Right to Breach Notification How will I know if my information is compromised? When data is compromised, individuals have the right to be notified of the breach. Businesses are required to report breaches to authorities within 72 hours, and individuals will be notified as soon as possible thereafter. How Can FileFacets Help? FileFacets provides the platform and methodology to help businesses comply with the EUs GDPR. With years of experience in information governance, FileFacets provides the tools for acquiring data, and identifying and actioning of personal data from multiple sources.Through a sophisticated, yet simple interface, FileFacets allows businesses to scan multiple unstructured data sources and repositories networked and cloud-based shared drives, servers, enterprise content management systems, email, desktops, and laptops to locate and identify any personal data or sensitive data an organization may possess. FileFacets scans multiple sources and repositories to locate and identify any PII or sensitive data that your organization may possess. It will constantly run so any additional content with PII can be flagged and dealt with in a safe and secure manner. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev FileFacets in MicroScope Article GDPR influencing channel relationships Chris Perram interviewed in article The Impact of Artificial Intelligence on Law Firms Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, compliance_certifications, data_protection, access_management, incident_response, privacy_policy",
+    "usage": {
+      "prompt_tokens": 812,
+      "completion_tokens": 373,
+      "total_tokens": 1185
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

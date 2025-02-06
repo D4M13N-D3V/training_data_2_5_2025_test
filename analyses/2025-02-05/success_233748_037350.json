@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:36:52.246740",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day September 6, 2016 Windows Media Player DRM Used for Malware Again.. September 6, 2016 Movie and TV watchers who download pirated content have long been warned of the potential for malware that might accompany their chosen media. Now use is again being made of Digital Rights Management DRM functionality  designed to prevent piracy  to distribute malware. The new attack, brought to Cyrens Duplicates Files vs Records  Why You Need to Know the Difference September 6, 2016 Duplicates Files vs Records  Why You Need to Know the Difference Within each database, and eventually, each enterprise content management ECM system, businesses must manage the limits of storage. Relational databases are filled with countless records and files unfortunately, many of those are duplicated, which take up much-needed storage Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, technical_documentation",
+    "usage": {
+      "prompt_tokens": 280,
+      "completion_tokens": 313,
+      "total_tokens": 593
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:36:48.409741",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day December 15, 2016 Why context is everything December 15, 2016 Weve had a great response from customers and the media see eWeek, NetworkWorld, SiliconAngle to last weeks release of Resilient Access 3.0. At the core of this new release is functionality that we are calling contextual access control. We believe that to securely share data and connect organizations we need to go beyond todays narrow definition Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "access_management, data_protection",
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 303,
+      "total_tokens": 513
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

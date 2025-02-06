@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:34:45.835769",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Its Baaack! Dridex Targets UK With a New Set of Guns April 13, 2017 In the midst of the recent revival of Dridex, the notorious family of banking trojans, a Dridex attack scheme targeted at stealing UK users online banking credentials was detected this week and is being blocked by Cyrens security cloud. This new attack is initiated by an email PDF attachment claiming to be a confirmation letter or scanned document, then proceeds as shown below by our step-by-step security lab analysis. This is a different tack from the most common recent reports of Dridex attacking Windows users through spam campaigns with attached RTF documents with a .doc or .zip extension, which exploit a zero-day phishing vulnerability in Microsoft Word identified as CVE-2017-0199. Upon opening the PDF, which Cyren detects as JSDridLdr.A!Eldorado, the user is prompted with a notification that an embedded file is to be automatically opened. The embedded document is automatically opened through a PDF OpenAction event using the following PDF javascript code. uk_confirmation_ph975721850.pdf --- PDF Object 12 ---  TypeCatalogPages 8 0 RNames 11 0 ROpenAction  SJavaScriptJS 5 0 R   --- PDF Object 5 --- var a43ifa10023alerta2 this.exportDataObject cName 20170406824631.docm, nLaunch 2  Scan_776850.pdf --- PDF Object 11 ---  TypeCatalogPages 7 0 RNames 10 0 ROpenAction  SJavaScriptJS var a11ifa50alerta this.exportDataObject cName ScanData309093.docm, nLaunch 2    The exportDataObject function takes two parameters, cName and nLaunch. cName specifies the file attachment to be exported from the PDF and nLaunch, with a value of 2, directs the reader to save the attachment to a temporary file and ask the operating system to open it. In this case, an OpenXML-formatted macro-enabled document .DOCM is opened by Windows with Microsoft Word. The exported document is detected by Cyren as PP97MDownldr.gen. By default, Microsoft Word disables the automatic execution of VBA macros and will prompt the user with a notification similar to the snapshot below. Once the user enables the content, the VBA macro code is automatically executed with the use of the AutoOpen method. Similar to a few variants of macro-based malware, this variant stores a few of its needed strings in user form controls to evade analysis from known tools and scanners. The code attempts to download an encrypted executable from one of the listed URLs in its code medredacted.comkjv783r outofredacted.orgkjv783r jenya.redacted.comkjv783r sseleman.redacted.com874hv americasphotostudio.redacted.net874hv majestic-redacted.com874hv The downloaded data is decrypted using XOR operations with a 32-byte key hard-coded in the VBA code, saved in the Windows temporary directory using the filename redchip.exe and executed through the Shell.Application.Open method. The decrypted executable is detected by Cyren as W32Dridex.KJ.gen!Eldorado and confirmed to employ the new code injection known as AtomBombing. Researchers from IBM X-Force has published a detailed report on how Dridex exploits AtomBombing to inject its code into selected system processes to attain persistence and evade detection. Once it has found a target process to inject into, it gathers the following system information Computer name User name Operating system install date The gathered information is concatenated together with a 2-byte seed using the following format ComputerNameUserName00InstallDate2-byte seed Dridex generates the MD5 Hash from this built string, then converts it into GUID string format as shown below. 0012F44C 00C28AE0 ASCII 89bd3ac962a1ebc0e9112f6111f0f5eb 0012EEBC 7FFDFC00 UNICODE 89bd3ac9-62a1-ebc0-e911-2f6111f0f5eb This GUID is then used for the checking and creation of mutex names, event names and probably keys. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Point, Click and Hack  Phishers Try Wix Is Monday the Worst Day of the Weekfor Security? Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,data_protection,threat_prevention,technical_documentation",
+    "usage": {
+      "prompt_tokens": 1037,
+      "completion_tokens": 347,
+      "total_tokens": 1384
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

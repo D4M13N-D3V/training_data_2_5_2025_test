@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:27:00.232894",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 21, 2017 Black FridayCyber Monday Alert 5 Shopping Scams That Could Seriously Affect Your Business November 21, 2017 The last thing any company needs during the holiday season is the gift of ransomware on its IT systems. During this weeks build-up to Black Friday, Cyber Monday, and the actual holidays remember those?, everyone is going to spend some time doing a little shopping while on a company device Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention,end_user_security",
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 311,
+      "total_tokens": 521
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

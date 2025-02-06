@@ -1,0 +1,15 @@
+{
+  "timestamp": "2025-02-05T21:35:01.426132",
+  "content": "Search Free Trial Get Demo Multi-factor Authentication and Advanced Use Cases May 8, 2020 Data443 Risk Mitigation Development Blog by Damien O., Advanced Platform Developer at Data443 The past week has been very busy for the DataExpress Open Platform  DXOP  developers. One of the features they have been working on is 2-factor authentication for the Administrative UI, which adds a new level of security to the entire system requiring you to have a device attached that can generate a code that you must enter on the website to continue. This feature has been requested directly by customers who are in sensitivity areas like banking for example. server for another customer with very sensitive access requirements. We used a third party library to achieve the 2-factor authentication which is called apache_2fa   for HTTP and another library called GoogleAuth  . The third-party library works like a plugin for the web server itself and adds an entire new step of authentication on the server. It works alongside a mobile application called Google Authenticator which generates a code for linked websites using the Time-based One-time Password Algorithm TOTP. The code you are given can be entered as a second password when accessing the application. After implementing the library and spending quite some time writing documentation and setting up the infrastructure with the servers to support the 2-factor authentication of course we had to some quite a bit of time debugging it! A fair amount of time was spent keeping track and enabling secure encryption and storage of the keys for the 2-factor authentication in the database. Another bit was being able to safely decrypt it when the user is logging in. Major changes are required to the GUI of the management side of things, along with the database as well. However, the customer for ArcMail is rocking with 2FA now for access to their appliance! Good re-use of code and concepts here  Data443! Try it for Free Instant Data Classification Cyren URL Category Chacker Prev How to Simplify Digital Communication Archiving under Remote Learning Continued development on Global Privacy Manager powered exclusively by ClassiDocs Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443",
+  "categories": [
+    "product_security_features",
+    "access_management",
+    "data_protection",
+    "compliance_certifications",
+    "security_best_practices",
+    "threat_prevention",
+    "end_user_security",
+    "technical_documentation"
+  ],
+  "raw_response": "product_security_features,access_management,data_protection,compliance_certifications,security_best_practices,threat_prevention,end_user_security,technical_documentation"
+}

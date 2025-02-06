@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:39:27.754197",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Where is Resilient headed in September? August 23, 2016 As our SF summer winds down and we head into fall, things are heating up, and were not just talking about the temperature. The Resilient team is headed to 4 conferences in September, covering both government and enterprise markets, on both coasts. We are looking forward to reconnecting and meeting new folks. Please reach out to us to set something up if youre planning on attending any of these events. Looking forward to seeing you! Conference schedule Attending BoxWorks , Sept 6-8, San Francisco, CA Attending Intelligence  Security Summit , Sept 7-8, Washington DC Attending IJIS Mid-Year Briefing , Sept 14-16, Arlington, VA Attending Global Identity Summit , Sept 19-22, Tampa, FL On a Panel at Health 2.0 , Sept 25-28, Santa Clara, CA Attending Structure Security , Sept 27-28, San Francisco, CA Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Clean Up ROT! Make ECM Really Work For Your Company Duplicates Files vs Records  Why You Need to Know the Difference Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, privacy_policy",
+    "usage": {
+      "prompt_tokens": 366,
+      "completion_tokens": 366,
+      "total_tokens": 732
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

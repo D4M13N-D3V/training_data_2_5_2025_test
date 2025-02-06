@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:29:55.250196",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 23, 2017 Cyren erg\u00e4nzt die SAAS-Security- Plattform durch E- Mail-Archiving October 23, 2017 Der Cyren E-Mail- Archiving-Service sch\u00fctzt Gesch\u00e4ftsmitteilungen und vereinfacht die regulatorische Compliance. Der Service wird als Teil der Unternehmens-Security- Plattform von Cyren angeboten, die Web-Security, E-Mail- Security, DNS-Security, Cloud-Sandboxing und nun auch das E-Mail- Archiving auf einer einzigen, global betriebenen Security-as- a- Service-Plattform integriert. Unsere Kunden sch\u00e4tzen unsere Cloud-Kompetenz und bitten Cyren Adds Email Archiving To SaaS Security Platform October 23, 2017 The Cyren Email Archiving service protects business messages and simplifies regulatory compliance. The service is offered as part of Cyrens enterprise security platform, which integrates web security, email security, DNS security, cloud sandboxing and now, email archiving, on a single globally-operated Security-as-a-Service platform. Our customers value our cloud expertise and Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, compliance_certifications, data_protection, threat_prevention",
+    "usage": {
+      "prompt_tokens": 357,
+      "completion_tokens": 306,
+      "total_tokens": 663
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

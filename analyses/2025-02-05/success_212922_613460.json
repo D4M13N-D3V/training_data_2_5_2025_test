@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:29:01.736450",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo 30 Day Free Trial Request Data Identification Manager Shine a light on dark data across the enterprise - all within hours. Data Identification Manager provides the ability to automatically inventory all data repositories, classify  tag all data, and enable global search and discovery. Leverage Data Identification Manager to Conduct data discovery to locate sensitive files on-premise and in the cloud Mitigate risk by continuously monitoring where sensitive data is located Analyze your data through powerful machine learning  artificial intelligence to identify document types across the enterprise Classify your data to ensure compliance with internal and regulatory policies Benefits Rapid data consolidation, ROT analysis and management Ingesting of additional file repositories ensures audit compliance for long term retention requirements Continuously access data Mitigate risks during an e-Discovery or compliance audit Increase server performance while decreasing storage requirements 30 Day Trial Request Fill out the form below for access. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,compliance_certifications,data_protection,security_best_practices",
+    "usage": {
+      "prompt_tokens": 290,
+      "completion_tokens": 324,
+      "total_tokens": 614
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

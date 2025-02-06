@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:20:45.034173",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Phishing by the numbers  September 2021 October 14, 2021 This blog is part of our monthly blog series analyzing incident response data from Cyren threat researchers and Cyren security clouds including Cyren Inbox Security. October is Cybersecurity Awareness Month, and the theme for the week of October 11 is Phight the Phish. Below are some statistics about that Phight and what organizations can do to detect and contain phishing threats that evade detection by Secure Email Gateways and Microsoft Defender for Office 365. Please see proven security tips throughout the blog. Summary Statistics In September, Cyren detected nearly 43,000 confirmed email threats. Adjusting for changes in the volume of email traffic, this number reflects an 18 increase in malicious activity over August. The key takeaways include Phishing continues to be the predominant threat arriving in users mailboxes. However, a large university accounts for one-third of the threats classified as business email compromise BEC so the research team has excluded this data from the pie chart in Figure 1. 82 of incidents were classified as phishing 16 of malicious emails were BEC attempts , basically a plain text email associated with an attempt at fraud 2 of malicious emails included a malware attachment Phight the Phish Tip PDF and .zip files are the most common files associated with malicious attachments and URLs. Be especially cautious before opening or downloading these file types. Figure 1  Threats by type excluding a large university Specialized detection and automated incident response are critical to eliminating threats before risky users do something they shouldnt. 94 of threats were detected before the recipients read the messages 95 of threats were detected automatically using real-time analysis The remaining 5 were suspicious messages that required human analysis. Phight the Phish Tip Apply multiple best of breed detection capabilities beyond the gateway. A combination of machine learning, natural language processing, heuristics and computer vision are required to detect and protect against zero-day and evasive email threats in real-time. User education is important if not mandated by compliance requirements. However, user engagement is next level. Of the 5 of total of confirmed phishing threats that required human analysis, most were triaged by end users. This approach eliminates alert fatigue for security and helpdesk analysts. Of the suspicious messages submitted by users to the Cyrens platform, less than 1 were false positives. Phishing Attack of Note This month, there are two attacks of note because they share similar tactics Attackers spoofed the sender email addresses so the email appeared to originate from within the company. Faking the email sender address is slightly more difficult than only changing the display name. The phishing campaigns relied on fake notifications from a Microsoft collaboration platform, customized for each organization. Organizations rely so heavily on these tools to remind remote workers of important tasks and updates. Cybercriminals targeted Office 365 login credentials. There is tremendous evidence to support that BEC and ransomware attacks are launched after cybercriminals take over an employee account. Cyren detected the first attack on September 20, 2021. This attack included 353 incidents across 5 customers. Figure 2  Fake Microsoft Teams notification The second attack occurred from Sept 27, 2021 into early October. Cybercriminals sent 848 malicious emails to 7 different organizations. Figure 3  Fake Microsoft SharePoint notification Phight the Phish Tip If you must act on a notification, go to the platform and review the notifications there instead of clicking links in emails. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Cyren Incident Response Service CIRS for Email Threat Protection The Covid-19 Effect on well-known Brands scam Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "incident_response,product_security_features,threat_prevention,security_best_practices,end_user_security",
+    "usage": {
+      "prompt_tokens": 860,
+      "completion_tokens": 564,
+      "total_tokens": 1424
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

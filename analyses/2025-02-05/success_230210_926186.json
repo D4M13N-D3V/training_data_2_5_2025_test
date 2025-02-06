@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:01:27.687864",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day March 1, 2018 725 increase in cryptocurrency mining threatens more than just your CPU March 1, 2018 Weve been tracking cryptocurrency mining activity here at the Cyren Security Lab and have confirmed a massive run-up in the number of web sites hosting cryptomining scripts globally. Based on the monitoring of a sample of 500,000 sites, weve found a 725 increase in the number of domains running scripts Eine Erh\u00f6hung von 725  im Kryptow\u00e4hrungs-Mining bedroht mehr als nur Ihre CPU March 1, 2018 Wir haben hier im Cyren Security Lab das Kryptow\u00e4hrungs-Mining nachverfolgt und konnten einen massiven Anstieg in der Anzahl der Websites best\u00e4tigen, die Krypto-Mining-Skripts weltweit hosten. Auf Basis der \u00dcberwachung einer Probe von 500.000 Websites haben wir festgestellt, dass im viermonatigen Zeitraum vom letzten September bis Januar 2018 eine Erh\u00f6hung von Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention",
+    "usage": {
+      "prompt_tokens": 340,
+      "completion_tokens": 426,
+      "total_tokens": 766
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

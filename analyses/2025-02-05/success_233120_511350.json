@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:30:28.808695",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 4, 2017 Survey Finds Security Investment Increasing, But Not Security October 4, 2017 The second-annual Cyren-Osterman Research U.S. security survey shows a significant disconnect between rising IT security spending and a low level of confidence in current protection, among many topics covered in the 24-page report, IT Security at SMBs 2017 Benchmarking Survey, available for free download. Security Budgets Up Sharply On average, Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "security_best_practices, privacy_policy, threat_prevention, incident_response, data_protection",
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 441,
+      "total_tokens": 657
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

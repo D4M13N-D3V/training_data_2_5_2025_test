@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:16:38.816640",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day January 12, 2021 Phishing through the prism of graphic design January 12, 2021 A little design in the phishing world What do bright and catchy presentations, laconic documents, and perfect CVs have in common? Everyone can easily create it by using online graphic design platforms without wasting time. Almost everyone already knows about such services and have used at least one time before. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "privacy_policy",
+    "usage": {
+      "prompt_tokens": 202,
+      "completion_tokens": 555,
+      "total_tokens": 757
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

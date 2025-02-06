@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:42:33.762260",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day December 3, 2018 What Does CCPA Mean For Us? December 3, 2018 Growing in recent years has been consumers distrust in the methods companies have been gathering, using, and sharing their information. With major laws surrounding ePrivacy being implemented there are a few major trends emerging. On June 18th 2018, the California Consumer Privacy Act CCPA was enacted with a plan to come in affect Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "privacy_policy, data_protection, compliance_certifications",
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 269,
+      "total_tokens": 477
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:12:38.523814",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Surveys in Data Governance  Is There Room For Them? December 24, 2019 For companies aiming to be in full compliance with the CCPA when the law is enacted on January 1st, data governance, data mapping, and data inventory should be at the forefront of priorities. These processes are essential to any compliancy initiative  but what happens when they are unreliable, and data maps are built on human error? Many vendors are still utilizing surveys as a way to gather information, map the data, and build a compliance roadmap. But, is there room for surveys in data governance? Lets take a look at some of the issues with creating your data inventory from surveys Surveys rely on PEOPLE First and foremost, the most obvious issue with surveys is that they are completed by your employees. Shocking, I know, that your employees might not place the same priority on data governance that you do. With complicated legal language and unmotivated survey takers, false and incomplete input is the norm in survey-based data mapping. It doesnt help with SARs So you think you know where all the data is in your organization, now what happens when someone wants to exercise their law-given right? Well, if you built your data inventory off of surveys, there is nowhere near enough detail to answer even the most basic requests in the SARs. If the request wants to modify or delete their personal data, will you have every piece of data in question in your inventory? With surveys, probably not. Time and Money Ignoring the fact that the data you end up getting is almost certainly inaccurate  you will end up spending way too much time and money on data inventory. It is very difficult to guide all important stakeholders in the data landscape to complete the sometimes months-long survey process, and by the time it is completed and you have spent a massive amount of time and money on collecting this information, it is simply out of date. Organizations need full control of their data from top to bottom Surveys are static Perhaps the second most obvious issue with surveys is that the data collected cannot be altered or modified reliably in any way. The data landscape of the modern organization is constantly changing, whether thats moving to the cloud or just producing more data in general  modern businesses need the ability to fully capture all changes in data and how it is processed and collected, with surveys, this is impossible. With the dawn of CCPA upon us, businesses in the US must start taking data ownership very seriously  as we saw with GDPR , a lot of organizations were not ready and faced massive consequences. As the law intends, organizations must now be in full control of their data from top to bottom. This data must be constantly up to date, accurate, and fully accessible. Many companies are still mapping their data with surveys, and the true extent of this mishandling of data will become evident when CCPA is introduced  just like it did with GDPR. But, CCPA is not to be feared. Those organizations that have implemented the proper tools and processes into their business endeavors will reap the rewards of being early movers to the new age of consumer privacy governance. In cannot be reinforced enough, organizations need full control of their data from top to bottom. This data must be constantly up to date, accurate, and fully accessible. Enter Data443s Global Privacy Manager . Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Map Personal Information for CCPA? How Does CCPA Affect Me?  Businesses in California Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "compliance_certifications, data_protection, technical_documentation, security_best_practices, product_security_features",
+    "usage": {
+      "prompt_tokens": 827,
+      "completion_tokens": 294,
+      "total_tokens": 1121
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

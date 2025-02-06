@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:28:58.274138",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Contact Investor Relations Matthew Abenante Matthew Abenante leads our investor relations program. He helps us increase awareness of Data443 Risk Mitigation, Inc. and demonstrates the significant long-term potential for investors. The experience and expertise that Matthew brings enables us to communicate the value of our business model to our shareholders, as well as to the greater investment community. Matthew looks forward to informing and educating the investment community about Data443s growth strategy and successes. Email Matthew 919-858-6542 Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "```none```",
+    "usage": {
+      "prompt_tokens": 220,
+      "completion_tokens": 324,
+      "total_tokens": 544
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

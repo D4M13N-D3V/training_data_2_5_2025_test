@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:26:44.733361",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day February 15, 2019 Ransomware Overshadowed by Phishing, But Its Not Dead Yet February 15, 2019 According to several recent surveys, phishing may have surpassed ransomware as the top concern for IT and security managers, and there may not be a single ransomware out there to capture the collective imagination like Locky did in 2016, but dont be misledransomware continues alive and well. Recent targeted Ryuk Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security, threat_prevention",
+    "usage": {
+      "prompt_tokens": 215,
+      "completion_tokens": 408,
+      "total_tokens": 623
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

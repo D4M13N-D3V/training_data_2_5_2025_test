@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:42:30.899799",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day March 24, 2022 Data443s Antivirus Protection Manager Achieves VB100 Certification March 24, 2022 Detected 100 of Malware in Testing  Extends Endpoint Leadership RESEARCH TRIANGLE PARK, NC, March 24, 2022  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDSD, OTCPK ATDS, the leading data security and privacy software company for ALL THINGS DATA SECURITY, is pleased to announce that Data443 Antivirus Cybercriminals Unleash Ukrainian Crypto Scams March 24, 2022 Over 100K daily fake donation emails uncovered by the Cyren research team Cybercriminals know which techniques increase their chances of successfully scamming unsuspecting victims, shamelessly exploiting any event regardless of human suffering to achieve monetary gain. The Russian invasion of Ukraine is no exception. Over the past two weeks, the Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, compliance_certifications, threat_prevention",
+    "usage": {
+      "prompt_tokens": 306,
+      "completion_tokens": 210,
+      "total_tokens": 516
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

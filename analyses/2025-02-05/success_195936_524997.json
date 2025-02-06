@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T19:51:48.366925",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo The Anatomy of a Phishing Email Attack October 12, 2021 Phishing scams are one of the most common ways hackers gain access to sensitive or confidential information. In fact, 75 of organizations around the world experienced some kind of phishing attack in 2020. But, what is phishing? A phishing attack includes sending fraudulent emails which appear to be coming from a reputable company. The goal of these emails is to deceive recipients into clicking malicious links or downloading infected attachments. This can allow hackers to steal financial or confidential information. Phishing attacks start when hackers build fake trust with the recipient. This can be done by providing accurate information about the recipients company, street address, or coworkers names. After that, they set the bait, which is often linked to trending news topics, routine business processes, or by impersonating someone they know. Lastly, phishing attacks typically end by the hacker springing the trap. Stopping these phishing attacks is essential. What are the Steps of a Phishing Attack? While most folks know what phishing is, few realize the lengths to which a criminal will go to initiate a phishing attack. More than just distributing emails with fake corporate logos like LinkedIn or Facebook, cybercriminals design attacks carefully by using fake clickable advertising, spoofing well-known online brands, and creating legitimate-looking phishing websites to capture the sensitive data that the unsuspecting victim enters. Step 1 Victim Identification There are two kinds of phishing attacks  mass phishing attacks and targeted phishing attacks. Mass phishing attacks are untargeted and are sent to a large group of victims. Targeted phishing attacks, on the other hand, are targeting a specific group, or high profile victim. Step 2 Source Setup The setup is the next step to a phishing attack. This could involve the use of brand names, or sophisticatedly crafted content to lure in the victim. Lets dive into these two types of setups. Brand Names The phisher selects a brand name for mass email distribution, such as LinkedIn, PayPal, or FedEx. Using a newly created domain or a hacked website, phisher builds webpages that resemble those of trusted brand name. This can unfortunately lead the victim to believe the phisher is legitimate. Sophisticated Content In this case, the phisher develops an email with legitimate-looking content requesting legal or financial information. They then spoof the email address of someone at the target organization or of a contact known to the target. Step 3 Attack Distribution In this step, the phisher sends a mass distribution email containing brand logosnames and links to fake web pages. They place links to fake web pages in banner ads, on social media, or in text messages. Similarly, they could send an email to a specific target victim or group. Step 4 Hook Victims Phishers will typically use specific tactics to hook their victims. Once victims are hooked, they usually do the following Follow Fake Links Victims click on link in the email and enter sensitive credential information into fake web page. Responding Directly To Email Request The victim responds directly to email with the requested information, such as login credentials or financial information. Step 5 Expand  Monetize Once phishers begin hooking their victims, they typically expand their efforts in order to continue to monetize off of attacks. This can be done by developing additional attacks, such as selling stolen credentials, or by actually stealing money by using the credentials. Read the infographic today and learn about the anatomy of a phishing email attack. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Phishing Attack Prevention How to Avoid Phishing Attacks with Cyren Threat InDepth Cyren Incident Response Service CIRS for Email Threat Protection Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,security_best_practices,data_protection,threat_prevention,incident_response",
+    "usage": {
+      "prompt_tokens": 859,
+      "completion_tokens": 430,
+      "total_tokens": 1289
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

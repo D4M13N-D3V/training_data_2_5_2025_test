@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:47:02.828724",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day August 30, 2021 FORTUNE 500 HEALTH CARE CUSTOMER EXPANDS USE OF DATA443 SENSITIVE CONTENT MANAGER PLATFORM FOR RANSOMWARE-FREE CONTENT SHARING TO HOSPITAL SUB-BOARD MANAGEMENT TEAMS August 30, 2021 Highrisk data must be kept confidential, and securely segmented  financial and patient data protection is paramount RESEARCH TRIANGLE PARK, NC, Aug. 30, 2021  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company, has expanded services for its Sensitive Content Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,data_protection,access_management,threat_prevention",
+    "usage": {
+      "prompt_tokens": 251,
+      "completion_tokens": 287,
+      "total_tokens": 538
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

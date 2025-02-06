@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:42:24.044003",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day February 28, 2022 Glossary of Cyber Security Terms and Terminologies February 28, 2022 With cyber-attacks continuing to be one of the greatest threats faced online, there is an increased discussion surrounding cybersecurity and privacy protection. Companies spanning industries are increasingly concerned about protecting sensitive information and data from manipulation. However, in order to get involved with this important discussion, there needs to be Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection",
+    "usage": {
+      "prompt_tokens": 202,
+      "completion_tokens": 215,
+      "total_tokens": 417
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

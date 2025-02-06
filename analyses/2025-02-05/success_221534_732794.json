@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:15:33.711812",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo CCPA vs. GDPR September 8, 2019 Do you know how the California Consumer Privacy Act stacks up to Europes General Data Protection Regulation? Try it for Free Instant Data Classification Cyren URL Category Chacker Prev When was the last time you assessed your organizations complete HIPAA compliance? 10 Step Compliance Plan for CCPA Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "compliance_certifications, data_protection, product_security_features",
+    "usage": {
+      "prompt_tokens": 189,
+      "completion_tokens": 396,
+      "total_tokens": 585
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

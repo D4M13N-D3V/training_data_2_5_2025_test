@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:29:04.417600",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo 30 Day Free Trial Request Sensitive Content Manager Enable your team to collaborate and share content freely A security-centric collaboration service designed to give organizations the tools needed for successful content sharing, collaboration and safe distribution with full enterprise management in mind. Benefits Create and publish documentation in real-time. Works with PDFs, Office Documents, HTML5, and other rich media. Select your content to be protected, optionally convert it to universal formats, encrypt the files, upload the content to the appropriate storage location, and make the content available to authorized end-users. Full distribution and user management capabilities . Register, manage and monitor protected content based on internal system policies on a global or individual level. With digital rights management DRM functions, content can be distributed securely with various controls. Audit-friendly reporting and analytics functionality. Leverage a comprehensive suite of reports and data interfaces for auditing users, content, and activities. Reporting is implemented using industry-standard interfaces, allowing for data and presentation customizations. Sensitive Content Manager  can even be integrated into your own reporting systems or executive dashboards using provided data views 30 Day Trial Request Fill out the form below for access. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,security_best_practices,data_protection,access_management",
+    "usage": {
+      "prompt_tokens": 349,
+      "completion_tokens": 394,
+      "total_tokens": 743
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

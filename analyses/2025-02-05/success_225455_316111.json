@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:54:17.367591",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day May 16, 2018 Cybercriminals see real estate firms as profitable May 16, 2018 For the last two to three years, stories about real estate hacking and particularly phishing have appeared with increasing frequency in newspaper and blog headlines. Take for example the cybercriminals who stole client contact information from a DC-area real estate company, and then created a business email compromise BEC scam, Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention,data_protection,privacy_policy",
+    "usage": {
+      "prompt_tokens": 203,
+      "completion_tokens": 391,
+      "total_tokens": 594
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

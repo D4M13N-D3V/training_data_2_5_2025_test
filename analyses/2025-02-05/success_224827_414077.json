@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:46:32.144387",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Jason Skinner, an expert on cloud, collaboration and digital transformation, joins Resilient as an Advisor August 8, 2018 I am pleased to be working with Jason to help bring Resilient Access to additional audiences. In his new role as National Director at Crayon Software Experts, LLC CRAYONNO, a 1.5 billion NOK market cap Norwegian solutions company he will help customers innovate with Box, Facebook, Microsoft and many other larger technology vendors.  Ethan Ayer Try it for Free Instant Data Classification Cyren URL Category Chacker Prev IAM Concept of the Week FIDO 2.0 New Release is now available of The WordPress GDPR Framework Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,compliance_certifications,security_best_practices,data_protection,access_management,threat_prevention,privacy_policy",
+    "usage": {
+      "prompt_tokens": 258,
+      "completion_tokens": 480,
+      "total_tokens": 738
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

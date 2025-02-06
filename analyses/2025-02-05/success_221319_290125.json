@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:12:43.950246",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day September 15, 2021 Square Enix Phishing Campaign September 15, 2021 From July 20 until August 16, 2021, Cyren observed a significant increase in the number of Square Enix phishing URLs. The campaign coincided with 14 days of free play announced by Square Enix on July 12, 2021. During this period, we detected a total of 47,076 URLs for an average LEADING CHILD EDUCATIONAL HEALTH AND ACTIVITY SERVICES PROVIDER SELECTS DATA443 PRODUCT SUITE TO PROTECT AND PROVIDE PRIVACY COMPLIANCE SERVICES September 15, 2021 Highlysensitive data and large volumes drive complex requirements  millions of identities across over 24,000 schools  drives exclusive relationship for complete product suite RESEARCH TRIANGLE PARK, NC, Sept. 15, 2021  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company, Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, compliance_certifications, product_security_features, threat_prevention",
+    "usage": {
+      "prompt_tokens": 326,
+      "completion_tokens": 417,
+      "total_tokens": 743
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

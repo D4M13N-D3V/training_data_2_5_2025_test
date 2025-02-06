@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:46:14.833331",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day June 6, 2022 Data443 Appoints IP Leader and Chief Legal Officer Ms. Pamela Maher June 6, 2022 Recognized Expert on IP Law  Fresh off Recent Large IPO for Medical Software Device and Services provider in Silicon Valley RESEARCH TRIANGLE PARK, NC, June 06, 2022  Data443 Risk Mitigation, Inc. Data443 or the Company OTC ATDS, a leading data security and privacy software company for ALL THINGS Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 218,
+      "completion_tokens": 226,
+      "total_tokens": 444
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

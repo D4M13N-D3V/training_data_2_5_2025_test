@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:29:57.840111",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Reseller Agreement with Ricoh Canada October 10, 2017 Reseller Agreement with Ricoh Canada OTTAWA, ON  October 10, 2017  Privacy compliance and enterprise analytics company, FileFacets today announced that it has signed an agreement with Ricoh Canada , a global leader of document workflow solutions, IT and technical support services. Under the terms of the agreement, Ricoh Canada and FileFacets will partner to provide FileFacets innovative Enterprise ID platform to existing and future Ricoh enterprise customers, who are looking to improve the effectiveness and efficiency of their businesses through increased information mobility. FileFacets Enterprise ID is a Software-as-a-Service Saas online platform that performs sophisticated data discovery and content search of structured and unstructured data within corporate networks, servers, content management systems, email, desktops and laptops. The software identifies sensitive information and personal data, removes redundant data and facilitates the secure transfer of data between repositories. From their beginnings, in 1993, Ricoh Canada Inc. has been on the forefront of workplace innovation. Today, Ricoh Canada is dedicated to empowering digital workplaces, optimizing business workflows and facilitating information mobility , which includes enhancing the ability of an organization to capture, manage, access, and use information wherever and whenever it is needed. Ricoh looks to continuously improve its services portfolio to provide integrated solutions to help its customers improve their organization workflow and enhance their businesses process automation systems. We are very excited to bring this new offering to our customers, said Eric Fletcher, Vice President Marketing of Ricoh Canada. FileFacets Enterprise ID is a platform that can provide businesses with a holistic overview of its data and information resources. This platform presents organizations with actionable insights that can prove invaluable to our customers. Were proud to begin this relationship with Ricoh Canada, said Chris Perram, Chief Executive Officer of FileFacets, Partnering with FileFacets allows Ricoh Canada customers to improve information governance practices and mitigate regulatory and privacy compliance risk, saving time, increasing productivity and ultimately increasing their bottom line. About FileFacets FileFacets is a Software-as-a-Service Saas online platform that performs sophisticated data discovery and content search of structured and unstructured data within corporate networks, servers, content management systems, email, desktops and laptops. FileFacets Enterprise ID identifies sensitive information and personal data, removes redundant data and facilitates the secure transfer of content between repositories, mitigating risk and assisting businesses worldwide in their privacy compliance and data management efforts. For more information, visit www.filefacets.com . About Ricoh Canada We transform the way people work, communicate and exchange information through technology. We call it information mobility, and it gets you and your workforce the information you want  wherever and whenever you need it.With our expertise in capturing, managing and transforming information, we deliver a broad portfolio of services and technologies that help you innovate and grow. From redefining a workplace to providing solutions that help you be more productive and efficient, we make information work for you. For more information, visit  Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Chris talks Legal Tech with Lawyers Weekly Classification and GDPR Compliance  Why? Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, compliance_certifications, data_protection, threat_prevention",
+    "usage": {
+      "prompt_tokens": 764,
+      "completion_tokens": 365,
+      "total_tokens": 1129
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

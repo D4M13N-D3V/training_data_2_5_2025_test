@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:18:24.319495",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day January 17, 2025 API  SaaS Protection with Advanced URL Filtering January 17, 2025 Cyber security is key to protecting APIs and SaaS gateways from emerging threats. Businesses rely on secure infrastructure to protect their data, customer trust and achieve strategic goals. At Data443 we help organizations tackle these challenges head on with our Web Security Engine. Heres how a leading technology services company did it with our advanced URL filtering. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, data_protection, threat_prevention, security_best_practices, privacy_policy",
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 274,
+      "total_tokens": 485
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T19:28:39.447675",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 27, 2023 Why Should You Use Data443 for Instant Data Classification November 27, 2023 Data443s cutting-edge technologies are capable of identifying and defending your sensitive data regardless of location, platform, or format. When it comes to data classification, Data443 appears as the top solution in data classification. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, data_protection, threat_prevention",
+    "usage": {
+      "prompt_tokens": 188,
+      "completion_tokens": 420,
+      "total_tokens": 608
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

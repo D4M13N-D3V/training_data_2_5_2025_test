@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:32:00.398076",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Resilient IoT Guardian Unveiled to Protect Against Connected Threats May 31, 2017 Resilient Network Systems and RunSafe Security Announce Strategic Partnership, New Approach to IoT Security May 31, 2017 0900 AM Eastern Daylight Time SAN FRANCISCO BUSINESS WIRE Resilient Network Systems, the contextual access control company, today announced a strategic partnership with RunSafe Security to offer a unique IoT security solution Resilient IoT Guardian for both new and existing IoT deployments. This offering provides immediate defensive benefits and long-term assurance that your network continues to be trustworthy Weve brought the expertise of our two companies together from different areas of the security industry to offer this unique solution, said Joe Saunders, CEO of RunSafe Security. The strength and value of this new approach is in its ability to protect both at the individual IoT device level and at the device communications pathway level. With a projected 19 trillion economic transformation around IoT connected devices as deployments increase and adoption continues at record pace, so too are new attack vectors. The out-of-the-box security measures for most devices are too weak and finding skilled IoT security experts is an ongoing challenge. Resilient IoT Guardian embodies a new approach to defending devices, infrastructure and networks from cyber attacks. Combining RunSafes ability to cyber-harden devices remotely by means of three-step transformation, with Resilient Network Systems access control middleware to enforce policies such as continuous authentication and dynamic whitelisting, Resilient IoT Guardian can protect new and deployed devices remotely and is scheduled to be available this summer. This offering provides immediate defensive benefits and long-term assurance that your network continues to be trustworthy, said Ethan Ayer, CEO of Resilient Network Systems. Instead of worrying about hacks and misuse of your devices, we give you visibility into your network and the ability to manage it. About RunSafe Security RunSafe Security is the pioneer of a unique cyber-hardening technology designed to disrupt attackers and protect vulnerable embedded systems and devices. With the ability to make each device functionally identical but logically unique, RunSafe Security renders threats inert by eliminating attack vectors, significantly reducing vulnerabilities and denying malware the uniformity required to propagate. Based outside Washington, D.C., RunSafe Securitys customers span the IIoT, critical infrastructure, automotive and national security industries. About Resilient Network Systems Resilient Access is a policy-driven contextual access control solution for securely sharing data and connecting organizations. Our policy workflow engine discovers, organizes and resolves the information or attributes required to provide the context to make smarter access decisions. Resilients unique network-based architecture scales quickly to extend an organizations reach across its entire ecosystem. Resilient Network Systems has customers in the U.S. government, law enforcement and healthcare, and is a privately held, venture-backed company based in San Francisco. Contacts Treble Michael Kellner, 512-960-8222  Try it for Free Instant Data Classification Cyren URL Category Chacker Prev The ABCs of GDPR Webinar  Identity and Data Governance! Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, threat_prevention, access_management, data_protection, end_user_security",
+    "usage": {
+      "prompt_tokens": 736,
+      "completion_tokens": 268,
+      "total_tokens": 1004
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:27:02.520812",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 22, 2022 Abusing Remote Administration Tools November 22, 2022 The bad, worse and the horrible by Gunnar Gu\u00f0mundsson and Axel Marinho Gu\u00f0mundsson Introduction In this article, we look at a malware payload from an exploited Microsoft Word document. With a little Python scripting and deciphering we research a single sample and gather a few more versions to view a Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention,technical_documentation,privacy_policy",
+    "usage": {
+      "prompt_tokens": 203,
+      "completion_tokens": 375,
+      "total_tokens": 578
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

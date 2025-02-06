@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:49:40.535300",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Top 20 Brands Targeted for Yuletide Phishing December 18, 2019 As the final crush is on for Christmas shopping, keep in mind that online retailers and financial sites are still the most popular targets for phishing, according to recent analysis by the Cyren security lab. To learn which brands were the most frequently targeted by phishers, Cyren analysts extracted about a million URLs recently classified as phishing. There were very few surprises and the top 20 contained almost all the same brands as our previous report, in which we used data from Q1 of 2018. There was one very conspicuous change  IRS.gov does not feature, because clearly tax fraud is only a valid activity in Q1, tax season. This selection of online brands by phishers provides a useful indicator of phishing motivation Financial sites are clearly targets because stolen credentials provide criminals with direct access to money andor bitcoins, in addition to login credentials that could be resold on the black market. Online services, such as Apple, Google, and Microsoft serve as an Attack Platform for cybercriminals stolen credentials from a list of Gmail or Apple subscribers can be resold or possibly used to hack other websites, since many people use the same credentials user names  passwords for login on multiple sites. Additionally, email or social media logins can be used to target contacts of the victim. Shopping or commerce websites, such as Amazon and Alibaba offer criminals both credential information and the possibility of online shopping sprees or financial data if the victim stores credit card or banking information with the online services. Cyren can help you understand the size of your phishing problem. Click here to find out how. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Exploiting CAPTCHA The Latest Evasive Phishing Tactic Emotet Malware Still Evolving New Variants Detected Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, threat_prevention, security_best_practices",
+    "usage": {
+      "prompt_tokens": 496,
+      "completion_tokens": 230,
+      "total_tokens": 726
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:15:33.624255",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day February 5, 2021 What Is Macro Malware Macro Virus? Prevention Tips  Examples February 5, 2021 Macro malware also known as macro viruses is a computer virus that is written in the same macro language used in other software, such as Microsoft Excel and Word. Since macro viruses use the same macro language, the attack begins as soon as the document is opened. Macro malware can Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security, security_best_practices",
+    "usage": {
+      "prompt_tokens": 202,
+      "completion_tokens": 391,
+      "total_tokens": 593
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:42:49.193259",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo PIPEDA December 9, 2018 The Personal Information Protection and Electronic Documents Act PIPEDA has been law for quite some time, but new federal data breach and compromise notification requirements went into effect November 1 st, 2018. PIPEDA applies to all organizations that are federally regulated and fall under legislative authority of the Parliament of Canada, along will all local businesses in Yukon, Nunavut, and the Northwest Territories. PIPEDA also applies to the private sector of each province unless a province has its own privacy law that is substantially similar to PIPEDA only B.C., Alberta, and Quebec have privacy laws that are substantially similar So lets start with the basics, the 10 Privacy Principles of PIPEDA are a critical part of Canadian privacy law for the private sector. They are Accountability Identifying purposes Consent Limiting collection Limiting use, disclosure, and retention Accuracy Safeguards Openness Individual access Challenging compliance Along with these foundational rules, which you can read here , breach notification regulations have been added on November 1 st 2018. In line with GDPR, these new laws will require companies to report to affected individuals in the event of a security breach involving any personal information that creates real risk of significant harm. With three key new record-keeping, reporting, and notification obligations, the new PIPEDA takes a lot of inspiration from privacy laws around the world  specifically GDPR  CCPA. Organizations will now have to document every instance of a security breach, regardless of significance or risk to an individual. They will have to hold onto records of a breach for 24 months, and also provide the Privacy Commissioner with a copy of the record. In addition to reporting to the Privacy Commissioner, organizations must also notify all affected individuals in a way that allows them to understand the significant of the breach and outline any possible steps to mitigate the risk of harm to the individual. The organization must give direct notification email, telephone, or in person if the individual has consented to it. They can only give indirect notification, like a posting on their website, if direct notification would cause further harm, giving direct notice is prohibitive for the organization, or if they have invalid contact information. What happens if you dont comply? Failure to meet any of the breach reporting and notification requirements can lead to organizations, or even directors personally, to fines of up to 100,000. Also, organizations can be subject to a civil lawsuit, which is known to decimate a small business and take a chunk out of a large one. Also, most breaches reported to the Privacy Commissioner require an investigation  usually time-consuming and costly, this can cause damage to your public reputation. What should we do? The new additions to PIPEDA closely resemble the rules and regulations found in GDPR, so we must draw upon what we learned to fully thrive in the new privacy landscape. Organizations need a next generation solution, an all-in-one platform that will allow them to not just handle the new age of Data Governance but thrive in it. Secure data, next gen access governance, and controlled distribution will allow businesses to gain that competitive advantage. Enter Data443s ClassiDocs , TheAccessHub , and ARALOC . Try it for Free Instant Data Classification Cyren URL Category Chacker Prev What Does CCPA Mean For Us? BRAZILS VERSION OF GDPR LGPD Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "compliance_certifications, privacy_policy, data_protection, access_management, incident_response, product_security_features",
+    "usage": {
+      "prompt_tokens": 803,
+      "completion_tokens": 477,
+      "total_tokens": 1280
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

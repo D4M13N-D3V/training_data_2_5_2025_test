@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:27:03.348318",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Chris Perram on the Intralinks blog  Embracing Change A Companys Evolution From IG to AI February 1, 2018 Chris Perram on the Intralinks blog  Embracing Change A Companys Evolution From IG to AI Chris Perram, Information Governance IG specialist, is the founder of FileFacets, a SaaS platform that leverages Artificial Intelligence AI. Here Chris describes the market forces that drove the evolution of this technology shift. Read the Entire Post Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Final day to vote! DropBox  Security Best Practices for External Sharing on Content Collaboration Platforms Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "security_best_practices",
+    "usage": {
+      "prompt_tokens": 254,
+      "completion_tokens": 405,
+      "total_tokens": 659
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

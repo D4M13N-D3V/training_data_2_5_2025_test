@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:43:06.423951",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day April 1, 2022 Data443 Reports 46 Increase in Revenue, 41 Increase in Gross Profit in Fiscal Year 2021 April 1, 2022 Business Update Webcast on Monday, April 4, 2022, at 430pm ET RESEARCH TRIANGLE PARK, NC, April 01, 2022  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDSD, OTCPK ATDS, the leading data security and privacy software company for ALL THINGS DATA SECURITY, today announced operating results for the Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 240,
+      "completion_tokens": 884,
+      "total_tokens": 1124
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

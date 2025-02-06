@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:23:20.974792",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo How Machine Learning Is Building a Better Spam Trap July 16, 2020 Bad actors are constantly raising the ante on email scams. According to Microsoft , phishers have been quietly retaliating, evolving their techniques to try and evade protections. In 2019, we saw phishing attacks reach new levels of creativity and sophistication. To keep pace with these evasive attacks, threat protection software has to adapt, and machine-learning algorithms can be a powerful way to keep pace. Related You Should Enlist Your Employees in Threat Detection A Learning Computer Machine-learning algorithms include Sender Behavior Analysis detects imposter or spoofed emails, using header analysis, cousin or look-alike domain detection, as well as natural language processing to determine whether the language in the body of an email might be indicative of social engineering. URL Behavior Analysis protects users from credential theft by extracting URLs from emails and examining the destination web page for evidence that it might be a phishing site. Underlying technologies should be built specifically to detect evasive phishing tactics. For example, automatically access suspect sites from multiple source IP addresses and emulate different browsers to observe how the site renders in different environments. Mailbox Behavior Analysis profiles mailbox activity to create a baseline of trusted behaviors and relationships. Who sends emails to whom and at what time of day? What volumes? What do the contents look like? And many others. Mailboxes are then continuously monitored for anomalous behaviors and predictive analytics are used to detect threats. For example, if an executive never sends emails to a finance cloud, and then suddenly he does, late on a Friday evening, requesting a money transfer, this behavior will be an anomaly, indicating a possible BEC attack. Incident Analysis Enables rapid investigation, containment, response and remediation of threats. Incidents are created whenever an email contravenes a security policy or is reported by the user. Look for automation here too, including clear display of detailed forensic data per incident and automatic aggregation of similar incidents into a single case that can be remediated in one fell swoop. Employee Insights Are Valuable Your employees gut feelings are incredibly valuable and can help you crowdsource threats, however, learning how to identify phishing links can also be helpful. But companies rarely leverage this unique threat intelligence, and these insights usually languish inside ITs ticket queue. Cyren Inbox Security includes a simple-to-install and -use Outlook plugin that helps Microsoft 365 users identify phishing attacks, and provide critical feedback to the intelligence engine. Theyre one click away from flagging an email as suspicious, and telling Cyren to search for lookalike emails in the system. Over time, the engine gets smarter, enriched by employees instincts and critical thinking. To learn more about Cyren Inbox Security and start a 30-day trial, visit   Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Microsoft 365 Is Wildly Successful and Profoundly Vulnerable  Heres Why Spear Phishing, Whaling, and Delayed Detonation, Oh My! Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, incident_response, end_user_security, technical_documentation",
+    "usage": {
+      "prompt_tokens": 724,
+      "completion_tokens": 457,
+      "total_tokens": 1181
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

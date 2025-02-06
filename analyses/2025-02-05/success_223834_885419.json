@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:37:54.645605",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day February 14, 2019 Ransomware von Phishing \u00fcbertroffen, aber noch nicht ganz ausgemerzt February 14, 2019 Mehreren j\u00fcngsten Umfragen zufolge hat Phishing Ransomware als gr\u00f6\u00dftes Sicherheitsproblem f\u00fcr IT- und Sicherheitsmanager \u00fcbertroffen. Keine einzige Ransomware steht so im kollektiven Bewusstsein wie Locky im Jahr 2016. Aber lassen Sie sich nicht t\u00e4uschen Ransomware geht es weiterhin allzu gut. J\u00fcngste zielgerichtete Ryuk-Angriffe haben Unternehmen verst\u00e4rkt ins Visier genommen, wie Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security,threat_prevention,privacy_policy,data_protection",
+    "usage": {
+      "prompt_tokens": 264,
+      "completion_tokens": 410,
+      "total_tokens": 674
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

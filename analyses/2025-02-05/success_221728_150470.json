@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:16:33.367134",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day March 10, 2021 Loose SPF, DKIM, DMARC, and ARC Settings Sabotage Security March 10, 2021 Its safe to say that all of our Cyren Inbox Security customers use the native Office 365 security capabilities of Exchange Online Protection and Advanced Threat Protection now collectively called Microsoft Defender for Office 365. If you follow this blog, you cant help but notice that CIS and our incident Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features",
+    "usage": {
+      "prompt_tokens": 207,
+      "completion_tokens": 324,
+      "total_tokens": 531
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

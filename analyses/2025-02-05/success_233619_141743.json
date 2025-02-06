@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:35:31.944121",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo IAM Concept of the Week FIDO Fast Identity Online February 1, 2017 IAM Concept of the Week blog series  Each week we define and explain the significance of a concept in the world of Identity and Access Management. This week our IAM Concept of the Week deals with FIDO  F ast Id entity O nline, an authentication technology largely based on biometrics. FIDO is supported by over 250 companies including Google, Microsoft and Salesforce and saw a 200 increase in adoption in 2016. The FIDO Alliance was created in 2013 by PayPal, Lenovo and others, with the goal of replacing passwords as the main method of authentication. Passwords, as we all know too well, are problematic from both a user experience, and security point of view. McKinsey research found that the average consumers now has 14 different passwords to remember, while a recent study by Verizon found that 63 of all data breaches involved the use of stolen, weak or default passwords. At the core of FIDO is the users smartphone, that uses cryptographic keys to securely authenticate with the FIDO-enabled server of the service or app the user is attempting to access. FIDO is made up of two sets of specifications or user experiences for authentication  UAF Universal Authentication Framework and U2F Universal Second Factor. UAF deals with passwordless authentication while U2F addresses the second factor authentication. Setting up FIDO authentication from a users perspective is straightforward. First the user selects an authentication method on their smartphone. The biometric method will depend on their preference, the capability of their phone, and the methods supported by the FIDO-enabled service. Once a method is selected, say a fingerprint, a biometric template is created along with a private and a public cryptographic key. The private key and biometric template are stored on the users device. The public key is sent to the FIDO-enabled server. Now, anytime the user needs to authenticate, the server just sends a challenge to the users device which is then signed by the private key and returned to the service to identify the user. The advantages of the FIDO approach are obvious Almost frictionless authentication No passwords to remember or reset The biometric data never leaves the phone so the approach is not vulnerable to server-based breaches On the other hand even though the biometric may remain securely on the device, biometrics like fingerprint records exist elsewhere, many times on government-controlled servers. If a biometric is compromised there is no easy way reset it like a password. Supporters of FIDO argue that the standard also includes non-biometrics methods like PIN or tokens and that for sensitive data multi factor authentication is a necessity. Ironically, many implementations of MFA include passwords as a possible factor. Only time will tell the extent to which FIDOs biometric authentication approach will reduce our dependence on the humble password. Further reading Fido Alliance Passwords A long goodbye CSO Other blogs in the IAM Concept of the Week series SAML, OAuth2 and OpenID Connect Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Streamlining the Serious Business of Due Diligence GovTech  Adventures and Observations in IAM Contextual Access Control Demo at DHS Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,security_best_practices,data_protection,access_management,threat_prevention,privacy_policy",
+    "usage": {
+      "prompt_tokens": 767,
+      "completion_tokens": 521,
+      "total_tokens": 1288
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

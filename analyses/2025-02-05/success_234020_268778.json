@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:39:34.587610",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo CYREN Survey Benchmarks Security at SMBs  71 Hacked in the Past Year! July 26, 2016 CYREN teamed with Osterman Research to ask questions of IT and security professionals at over 300 small and medium-sized businesses during June, and the resulting report is available for download here , and discussed in last weeks webinar available here . There are a lot of surveys and reports and white papers circulating which are focused on security issues at large enterprises, but the amount of information available on the security posture, problems and priorities of Mid-Market or SMBs is noticeably thin. Formerly entitled IT Security at SMBs CYREN 2016 Benchmarking Survey, the survey report is brimming with data and insights and answers questions like What percentage of SMBs suffered an infection or security breach in the past year, and how much did it cost them? How fast are IT security-related budgets rising at small and mid-size companies? What security solutions have such companies deployed, and from which vendors? How are companies protecting traveling employees? The responses to these and other questions are a great opportunity for any IT or security professional at a mid-market to benchmark themselves against their peers. Some survey highlights include 71 of SMBs have suffered an infection or breach in the past 12 months. The most prevalent type of breach was phishing-related, suffered by 43 of the companies surveyed. IT security-related costs are exploding, with an increase of 23 in the past year. 29 of SMBs already subscribe to some type of SaaS web security protection. 56 of SMBs say they are now doing SSL traffic inspection. We hope you find the report interesting and informative  feel free to reach out to the CYREN team in case of questions. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Locky Ransomware Now Embedded in Javascript New Cyberthreat Report A Deep Dive on Phishing Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,end_user_security,security_best_practices,data_protection,threat_prevention",
+    "usage": {
+      "prompt_tokens": 508,
+      "completion_tokens": 605,
+      "total_tokens": 1113
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

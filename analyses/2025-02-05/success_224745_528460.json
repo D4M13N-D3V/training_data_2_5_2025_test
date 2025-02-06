@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:46:23.364285",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day April 17, 2020 Covid AgentTesla April 17, 2020 With the world under threat of the COVID-19 aka corona virus, many cybercriminals are taking this opportunity to blend in the chaos. Here we have an email posing to have an order of masks. An important personal protection equipment that is on a very high demand as of this moment. Excel4 Macro Malware Delivers GoziUrsnif via a VelvetSweatshop Revival April 17, 2020 We have been seeing a surge in Excel malware using Excel4 Macros XLM in hidden worksheets. Recently, malicious actors started reviving an age-old technique to further hide the malicious XLM code by leveraging the VelvetSweatshop secret password in Excel workbooks. What is Macro Malware? Macro malware has been a popular File-less almost and Confused April 17, 2020 Amidst the crisis the world is going through because of the Covid-19 pandemic, malicious actors continue to take advantage of the situation to lure unsuspecting online consumers into installing malware into their systems. We have recently found reports of malicious Powerpoint slides being sent through email, which are disguised as Sch\u00fctzen Sie sich mit tiefgehender E-Mail-Sicherheit Email Security Defense-in-Depth vor Evasive Phishing April 17, 2020 Phishing-E-Mails und Ransomware finden weiterhin ihren Weg in die Posteing\u00e4nge. Da k\u00f6nnte einem der Gedanke kommen E-Mail-Sicherheit funktioniert einfach nicht. Es ist offensichtlich, dass Unternehmen beim Versuch, sich vor den ausget\u00fcftelten Angriffen von heute zu sch\u00fctzen, Technologie einsetzen, die urspr\u00fcnglich dazu konzipiert war, Spam und Malware zu blockieren. Ende der Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, technical_documentation",
+    "usage": {
+      "prompt_tokens": 494,
+      "completion_tokens": 356,
+      "total_tokens": 850
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

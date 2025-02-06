@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:45:35.560672",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day February 2, 2021 DATA443 DELIVERS ADVANCED CAPABILITIES FOR CLASSIDOCS INTEGRATED WITH MICROSOFT DOUBLE KEY EXCHANGE ON MICROSOFT AZURE February 2, 2021 Customer Demand Drives Rapid Adoption of Advanced Encryption and Data Protection Capabilities by ClassiDocs RESEARCH TRIANGLE PARK, NC, Feb. 02, 2021  Data443 Risk Mitigation, Inc. OTCPK ATDS, a leading data security and privacy software company for ALL THINGS DATA SECURITY, is pleased to announce its ClassiDocs product, which anchors Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection,product_security_features",
+    "usage": {
+      "prompt_tokens": 242,
+      "completion_tokens": 282,
+      "total_tokens": 524
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

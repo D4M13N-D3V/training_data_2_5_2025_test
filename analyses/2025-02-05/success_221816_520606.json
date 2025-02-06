@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:18:14.609601",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day December 4, 2020 Phishing hosted on high Alexa domains another dangerous trick in Web December 4, 2020 Dark side of high Alexa domains How much do you trust such services as Google, Windows, Dropbox? And what about the open access libraries? One more important question is, how much your employees use such services in their daily routine? According to the Cyren Inbox Security traffic statistic, vast amounts Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, end_user_security, security_best_practices, data_protection",
+    "usage": {
+      "prompt_tokens": 206,
+      "completion_tokens": 262,
+      "total_tokens": 468
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

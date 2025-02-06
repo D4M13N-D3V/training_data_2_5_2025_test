@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T16:41:48.583925",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day April 29, 2020 8 Key Best Practices for Archiving Digital Communication in the New Normal April 29, 2020 In todays online classroom, more communication is happening amongst staff and students than ever before, and schools are still required to comply with their applicable state and federal laws. Most, if not all, of k-12 schools have implemented an email archiving solution  although, they may be looking for guidance as data volume Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "security_best_practices,compliance_certifications,data_protection,privacy_policy",
+    "usage": {
+      "prompt_tokens": 213,
+      "completion_tokens": 269,
+      "total_tokens": 482
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

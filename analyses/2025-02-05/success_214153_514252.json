@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:41:46.940079",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo The 8-Day Rule A Game Changer in Spam Detection August 6, 2024 In the world of digital marketing and email communication spam is always a problem. A recent case study showed us the importance of longer rule expiration values in spam detection systems. Lets see how changing from 2 to 8 days made a big difference. The Case Study We saw a weird pattern with a spam rule set in late July. For almost 7.5 days there was almost no activity  only about 40 spam emails . Then on the 8th day we saw a huge spike of over 4,000 spam emails in 9 hours ! Key Notes Delayed Attack The spammer waited for an extended period before launching the big attack. Volume 4,150 transactions in 9 hours. Timing Just before the previous 2 day rule would have expired. Why the 8-Day Rule Matters This is why we extended our rule expiration from 2 to 8 days. If we were still on the 2 day rule this big spam attack would have gone undetected. Spammer Tactics This is a tactic spammers use. They keep effective spam patterns in their back pocket and wait for the right moment to strike. This allows them to potentially bypass shorter term detection rules and get the most out of their campaigns. Takeaways Monitoring Longer rule expiration is key to catching delayed high volume attacks. Adaptive Spam detection tools must adapt to more patient and strategic spammers. Data Review spam patterns and timing regularly to gain insights to improve detection. As data and email security professionals we must stay one step ahead of the spammers. This case study is a reminder of the importance of long term adaptive spam detection. By extending our rule expiration weve made it much harder for spammers to hit us with big attacks. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Meet ScamPup The New Best Friend of Scam Artists 123,000 Threats Blocked Data443s Strategy Against Global Spam Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, security_best_practices, data_protection, threat_prevention",
+    "usage": {
+      "prompt_tokens": 525,
+      "completion_tokens": 169,
+      "total_tokens": 694
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

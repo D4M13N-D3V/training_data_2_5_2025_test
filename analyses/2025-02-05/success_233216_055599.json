@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:32:00.672929",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day March 1, 2017 French Ministry Survey Delivers Macro Backdoor March 1, 2017 Thinking of moving to France? Soyez tr\u00e8s prudent! That form youre busy filling out may be uploading and downloading files, exfiltrating data, doing reconnaisance of your network  or worse. A criminal malware group behind a sophisticated Excel macro backdoor, which has been targeting Middle Eastern financial institutions since 2015, IAM Concept of the Week Context March 1, 2017 Concept of the Week blog series  Every week we define and explain the significance of a concept in the world of Identity and Access Management IAM. This week lets discuss the concept of context. Here at Resilient we believe that fundamentally the more information an organization has about an Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, access_management, privacy_policy",
+    "usage": {
+      "prompt_tokens": 278,
+      "completion_tokens": 273,
+      "total_tokens": 551
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

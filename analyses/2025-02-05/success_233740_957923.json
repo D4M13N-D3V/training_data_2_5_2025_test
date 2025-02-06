@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:36:50.827996",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo On Demand Webinar  Botnets the Clone Armies of Cybercrime December 14, 2016 Last week we hosted a webinar titled Botnets The Clone Armies of Cybercrime. Cyren security researchers, Avi Turiel and Geffen Tzur, discussed the history and current state of botnets and shared insights on malicious bot behavior, how to spot it, and what you can do to protect your organization. Some of the highlights from the discussion Whether you realize it or not, you very likely have bots in your network. During the webinar we polled our audience and 71 percent said they did not believe a bot had been detected in their organization. However, a KPMG study of mid-sized companies found that a whopping 93 percent were living with bot infections. Botnets are truly the clone armies of cybercrime and they are among the biggest internet threats of the 21st century. They deliver billions of ransomware, phishing, and spam emails every day, spreading malware, stealing data, and launching DDoS attacks. In Q3 2016 alone, Cyren estimates that botnets distributed globally an average of 56.8 billion spam and phishing emails per day. While bots use extremely complex methods to evade detection, they are surprisingly easy to set up. With only a few hundred dollars in hand and an internet connection, anyone can obtain the software and support to build a botnet. And that botnet yields a significant return on investment for the criminal botmaster. Get the on demand webinar recording now and learn what you need to do to protect your organization from malicious botnet activity. Want to learn more about cloud-based web security? Contact us here ! Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Malicious Google Chrome extension spreads nude celebrity pdfs to Facebook Yuletide spam and shopping scams breaking records Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "security_best_practices, threat_prevention, data_protection, end_user_security",
+    "usage": {
+      "prompt_tokens": 498,
+      "completion_tokens": 342,
+      "total_tokens": 840
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

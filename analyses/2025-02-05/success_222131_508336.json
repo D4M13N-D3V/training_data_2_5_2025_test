@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:20:39.511911",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Why Office 365 Archiving might not be enough to keep you compliant Published More ShareEdit March 25, 2019 While Microsoft Office 365 offers great benefits for organizations moving their email to the cloud, Office 365 email archiving provides neither the functionality nor the security that most IT and Legal departments require. Redundancy is an issue  Office 365 email archiving stores multiple copies of messages, but they reside within the same platform and architecture, establishing a single-point-of-failure. Office 365 email archiving also lacks robust compliance and e-discovery capabilities that executive leadership, IT and legal administrators will require. And Office 365 archiving options are insufficient for migrating and managing legacy email data archives. Thats where ArcMail can help. Providing secure, perpetual storage and simplified policy management, ArcMail Enterprise Information Archiving offers comprehensive capabilities to support Office 365 email archiving. Enterprise Information Archiving offers a cloud-based archive for storing all email, file and Lync IM conversations, with a rich set of cloud services designed to help Office 365 customers mitigate the risks of moving email infrastructure to the cloud. By addressing critical security, continuity and data assurance requirements, ArcMail enables organizations to eliminate dependence on on-premises technologies and reap the benefits of a cloud solution. ArcMail Enterprise Information Archiving provides tools that enable you to Rapidly search an Office365 archive and retrieve content within seconds, thanks to a 7-second search SLA. Provide greater data assurance and archive integrity through compliance-driven chains of custody. Support compliance and e-discovery needs with powerful search and reporting tools that dont require installation of additional hardware or significant software. Access email from anywhere using intuitive and powerful desktop and mobile apps  users can easily search for and access content without help from IT. Manage all Office 365 email archiving, file archiving and Lync archiving policies and reporting from a single, unified administrative console. With ArcMails Office 365 email archiving solution, you can Improve user productivity by enabling employees to find any email sent or received within seconds. Centralize and simplify control, security and governance of data retention policies. Improve email security with three encrypted copies of each email stored in separate locations. Minimize time required to respond to compliance, e-discovery and litigation hold requests. Reduce costs with a cloud-based solution to avoid expensive hardware and software as well as lengthy consultant of deployments. Simplify, speed and secure migration with ArcMails Office 365 migration tools Learn more about Office 365 email archiving with ArcMail, and about ArcMail solutions for Office 365 enterprise support by visiting ArcMail here . Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Exciting New Way to Authenticate on Android 7 phones  Resilient is Ready! Top Data Retention and Budget Challenges Solved Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, compliance_certifications, data_protection, access_management, security_best_practices",
+    "usage": {
+      "prompt_tokens": 692,
+      "completion_tokens": 243,
+      "total_tokens": 935
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

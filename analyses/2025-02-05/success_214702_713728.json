@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:46:20.220969",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day December 17, 2019 What Does Personal Information PI Mean Under CCPA December 17, 2019 The California Consumer Privacy Act CCPA is set to be indoctrinated on January 1st, 2020, and will change the consumer privacy landscape across the United States of America. Largely inspired by the General Data Privacy Regulation GDPR, the CCPA is very similar in its quest to move control of consumer data back Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "compliance_certifications, privacy_policy, data_protection, product_security_features, end_user_security",
+    "usage": {
+      "prompt_tokens": 211,
+      "completion_tokens": 510,
+      "total_tokens": 721
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

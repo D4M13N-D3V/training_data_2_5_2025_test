@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:32:07.167993",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo New Cyren Threat Report The Malware Wars August 17, 2017 If you want to know what a cyber-war looks like, read the news. And if you want to get up to speed quickly and try to make sense of all that news, I recommend downloading our new special report on malware , with a special nod to the included interview of anti-virus pioneer Fridrik Skulason, Cyrens VP of Anti-Malware Technologies, who discusses the past, present, and future of malware from the perspective of 30 years experience in fighting cybercrime. There is an excellent glossary of malware types, such as spyware and trojans, at the beginning of the report, followed by a summarized history of malware to provide context for todays events, providing a long view which complements the interview. The reports other several articles explore the May and June mass-scale, global ransomware attacks the explosion of hyper-evasive malware, designed to evade conventional sandbox detection best practices for stopping malware and how criminals are using encrypted SSL connections to hide malware, sharing the results of a study showing that almost 40 of all web malware today utilizes HTTPSyet recent surveys show that the majority of companies around the globe are not inspecting that traffic. Cybercriminals are All in Possibly no time period since the advent of the Internet has experienced as many dramatic global incidents directly related to malware and cyberthreats as the last 12 months. From election hacks to global ransomware attacks, malware threats are at an all-time high. And, unfortunately, as long as it proves lucrative, the only certainty is it will only get worse. Today, no item or user connected to the Internet is immune to attack. While many businesses are still studying what security measures might be necessary, cybercriminals are all in, creating dangerous new tools to target companies, governments, and private citizens. We need to be mindful that the world has changed. Hyper-evasive malware and threat distribution via HTTPS are growing rapidly mobile devices both Android and Appleare increasingly targets and Internet of Things tools, from refrigerators to televisions, are an inviting new vector for criminal purposes. A Three-Front War In this cyber-war, with respect specifically to malware, three current battlefronts stand out ransomware, hyper-evasive malware, and malware distribution via HTTPS. Clearly cybercriminals know the weak points in standard corporate defenses, and theyre optimizing their attacks to leverage security gaps related to these three threats in every possible way. One of the reasons that Cyren produces reports like this is to help businesses better understand the nature of the risks they are facing. In the past 25 years, malware has transformed from a mere nuisance into something that has the power to shut down hospital systems, steal millions from bank accounts, and significantly affect the well-being of businesses and people worldwide. We hope you find the report informative, and that it contributes to a better understanding of the problems faced, and the solutions required. You can download Cyrens latest in-depth analysis on malware here and I invite you to check out the on-demand webinar How Changing Malware is Changing Security . Enjoy! Want to learn more about cloud-delivered web security? Contact us here ! Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Trickbot Banking Trojan Making Phishing More Real Best Practices for Stopping Ransomware Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security,security_best_practices,data_protection,threat_prevention,technical_documentation",
+    "usage": {
+      "prompt_tokens": 799,
+      "completion_tokens": 491,
+      "total_tokens": 1290
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

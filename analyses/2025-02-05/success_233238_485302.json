@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:32:12.214327",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo CEO and Chairman of Cyren Shares Insight On The Evolving Security Market May 24, 2017 Lior Samuelson, Cyren CEO and Chairman, has been around technology and businesses for many years, but he is particularly passionate about making the Internet a safer place for users  especially those who seek better security and those on the move with their mobile devices. In this dont want to miss interview, Lior shares with vpnMentor why a cloud-based approach is critical in todays computing environment, how he sees the security market evolving in the next few years, and his top 3 security tips for companies today. Read the full interview on vpnMentor . Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Locky 2? Jaff Ransomware Launched from Necurs Botnet New Cyren Threat Report Ransomware Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, security_best_practices, threat_prevention",
+    "usage": {
+      "prompt_tokens": 297,
+      "completion_tokens": 544,
+      "total_tokens": 841
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

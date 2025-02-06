@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:38:09.005762",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Discord Attack Targets NFT Projects November 3, 2021 Multiple Targets Discord AdministratorsModerators and NFT project members were targeted today in a well-planned social engineering attack . Attackers managed to take over sessions of some privileged Discord accounts and used them to send messages to serversusers in Discord. Since the messages and announcement came from moderators accounts, it is likely that users will trust the content of their messages. As narrated by kekwin.eth on twitter, the threat actors were able to grab the session token of his Discord account by luring him to a screen sharing session. From that point, it only took a screen grab of the Developer Tools logs in Discord to bypass authentication, including 2FA, and take control of the account. Axie Infinity Fake Announcement A fake announcement was sent to the official Axie Infinity Team Discord channel. Though the announcement was retracted as fast as the adminsmoderators could, a couple of fast users were able to click on the links and were duped into purchasing a fake NFT for Axie Infinity. As stated on their Discord channel, a staff member was similarly tricked into giving away his Discord access through the network logs of Chromes Developer Tools. The image above is of the notice from Discord of the hacked staff member account note the similarity to kekwin.eth incident. Its likely that the attacks are by the same group since they have very similar approaches and close timelines. Although steps have been taken to secure Discord channels and accounts, threat actors are always finding ways to trick unsuspecting users. If users train to learn how to secure their accounts and follow security guidelines, it could lead to a more stress-free online experience. Reference     IOC httpsaxieinfinities.com Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Love Shopping Online? LinkedIn Phish Kit Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security, security_best_practices, access_management, incident_response, threat_prevention",
+    "usage": {
+      "prompt_tokens": 494,
+      "completion_tokens": 606,
+      "total_tokens": 1100
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

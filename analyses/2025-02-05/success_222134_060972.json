@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:20:39.548857",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 27, 2020 DATA443 TRIPLES DATA CENTER STORAGE CAPACITY DUE TO SIGNIFICANT INCREASE IN CUSTOMER CONSUMPTION November 27, 2020 Customer Reliance and Trust in Data443 Capabilities, Including Privacy and Security Capability for Data Storage and Processing, Increasing Exponentially RESEARCH TRIANGLE PARK, NC, Nov. 27, 2020  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company for ALL THINGS DATA SECURITY, Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 237,
+      "completion_tokens": 394,
+      "total_tokens": 631
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

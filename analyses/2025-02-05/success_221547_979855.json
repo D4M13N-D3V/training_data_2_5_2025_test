@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:15:46.298100",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 15, 2024 Appropriate Use of Content and Branding for Online Merchants October 15, 2024 Global providers of on and offline pay-later, finance-instantly and other financial product providers face the constant problem of ensuring their branding, content and offerings are represented correctly across all digital channels. As they expand into new markets control of how their assets are presented becomes critical to avoid misuse or regulatory issues. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "compliance_certifications, privacy_policy",
+    "usage": {
+      "prompt_tokens": 209,
+      "completion_tokens": 408,
+      "total_tokens": 617
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

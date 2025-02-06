@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:20:43.879482",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day February 1, 2019 Data Classification Fail Data Stolen at Apple Car February 1, 2019 Confidentiality Oaths and Stolen Secrets As Bloomberg first reported, an Apple Inc. engineer has been charged with stealing data from the company that contained car secrets for a prototype driverless car. Jizhong Chen had been working for Apple for about six months, signing a strict confidentiality oath upon being hired. According to another Apple Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, data_protection, access_management, threat_prevention",
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 444,
+      "total_tokens": 654
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

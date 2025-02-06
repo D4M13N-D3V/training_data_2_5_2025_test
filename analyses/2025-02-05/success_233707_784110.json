@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:36:46.222243",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo The Rise of Botnets January 12, 2017 The year 2016 was certainly notable for Locky and the rise of ransomware, but these last months our attention has been drawn to a fundamental element of the underlying criminal cyber infrastructure  botnets . In July, major attacks using LizardStresser, a distributed denial-of-service DDoS botnet using IoT devices, were launched by the Lizard Squad DDoS group. In August, we learned of the first Android-based, Twitter-controlled botnet. September ended with the announcement that cybercriminals had published the source code for a Trojan program called Mirai, designed to infect IoT devices and use these devices to build botnets and launch DDoS attacks. The malware itself was previously in use by a handful of criminals with hundreds of thousands of IoT devices already infected, but with its public distribution cybercriminals around the globe now have an easy method to build even more botnets. Botnet highlights in October included the use of a 100,000-device strong botnet to attack the DNS provider Dyn, ultimately bringing down dozens of well known Internet services, including Airbnb, Etsy, Pinterest, Amazon, PayPal, Twitter, and Netflix, as well as major news outlets, and ISPs, such as Comcast and Verizon. Using data from Cyrens own massive GlobalView security cloud, which collects and analyzes over 17 billion pieces of threat data daily, Cyren researchers discovered over hundreds of thousands of malicious DNS, email, and web activities originating from a single botnet. Add to all of this the Necurs botnetwhich we have tracked delivering Locky and Dridex malware and which has switched off twice in the last few months, giving the impression that it was offline but wasntand the world of botnets looks less like run-of-the-mill cybercrime and more like a season of Breaking Bad. In todays world, everything from laptops and routers to DVRs and security cameras are at risk of becoming cogs in the larger botnet wheel. In fact, a recent KPMG study of mid-sized companies found that 93 were living with bot infections. The botnets zombie army of co-opted devices are able to use the machines combined computing power to significantly affect an organizations operations, with impacts ranging from loss of revenue and business reputation, to problems with regulatory compliance and a reduction in customer confidence. Botnets can affect any individual, business, organization, or government through myriad means targeting the entity through DDoS attacks or using company computing resources and bandwidth to launch attacks on others, stealing trade secrets or clientemployee identity information, inserting malware into source code, or compromising a systems overall data integrity. Today every organization needs to ensure that they have security in place which has the depth and breadth of threat intelligence and the multi-layered defenses necessary to disrupt  at several levels  these modern clone armies of cybercrime. To get up to speed on botnets, check out our new threat report Botnets The Clone Armies of Cybercrime. Want to learn more about cloud-based email  web security? Contact us here ! Try it for Free Instant Data Classification Cyren URL Category Chacker Prev New Threat Report Everything you need to know about botnets Email Security Survey 75 of Companies Hacked in Past Year Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention,security_best_practices,data_protection,technical_documentation",
+    "usage": {
+      "prompt_tokens": 785,
+      "completion_tokens": 384,
+      "total_tokens": 1169
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

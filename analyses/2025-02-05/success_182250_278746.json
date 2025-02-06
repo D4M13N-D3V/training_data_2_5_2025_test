@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T18:18:41.305584",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Covid-19 Exposes a Newly Remote Workforce to More Evasive Phishing Attacks May 4, 2020 With the world threatened and preoccupied by Covid-19, cybercriminals are taking advantage of the chaos. In the past month, weve seen A surge in malware using Excel4 Macros XLM in hidden worksheets , under the guise of Important information about CoVid-19 AgentTesla sending an email posing to have an order of surgical masks And simple, age-old attacks with malicious Powerpoint slides attached Before Covid-19, 78 of Microsoft 365 administrators reported security breaches, citing phishing as the leading cause. Now scammers are rushing to target scattered workforces that are distracted, stressed, and accessing cloud systems from their home networks. Covid-19 is the perfect storm for cloud inbox security In response to the pandemic, many enterprises abruptly adopted new tools and protocols. Cloud inboxes have long been more vulnerable than on-premises email platformsenterprises using Microsoft 365 consistently report a higher average incidence of successful phishing attacks than they experienced with on-prem. Companies that switched quickly wont have additional safety measures in place. And those safety measures will be delayed. IT admins and SOC teams were already stretched to the limit. Their cybersecurity skills are in short supply, and sickdepleted staff will struggle to respond to the growing alerts they are bombarded with. And, cruelly, phishing and fraud attacks are designed to create a sense of urgency. They induce people to click or follow instructionsreflexive behavior for an on-edge workforce. According to the 2019 Global Data Exposure Report , 78 of CSOs and 65 of CEOs admit to clicking on a link they should not have, showing that no level of employee is immune to lapses in judgment. Its time to layer Inbox Detection and Response on top of SEGs Enterprises using cloud-hosted email urgently need an inner layer of email security called Inbox Detection and Response IDR. While trusty features like Microsoft Safe Links filter spam and known threats, it cant detect all sophisticatedevasive attacks like spear phishing attacks and cousin domain spoofing. IDR solutions instead hook into users inboxes, continuously scan all inbound and outbound emails in all folders, and automatically follow links. They check URLs for favicons, mismatched logos, legitimate site maps, domain owners, security certificates, even regionalized code  all indicators that help flag, Is this a valid email or is it phishing? Best of all, when threats are uncovered, IDR solutions can automatically delete every copy across every mailbox. This automatic remediation removes the burden on the email administrator or security analyst and massively reduces the feared window of vulnerability caused by malicious emails lingering for lengthy periods within the reach of users. Ready to learn more about defensive architectures with continuous email monitoring and detection? Read the whitepaper A New Vision for Phishing Defense Inbox Detection  Response Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Covid AgentTesla You Should Enlist Your Employees in Threat Detection Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, data_protection, access_management, threat_prevention, incident_response, technical_documentation, privacy_policy",
+    "usage": {
+      "prompt_tokens": 725,
+      "completion_tokens": 246,
+      "total_tokens": 971
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:38:51.874229",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day June 24, 2024 Your Inbox Is At Risk. How To Stop Outlook Phishing Email Attacks? June 24, 2024 Is your inbox the victim of an outlook phishing email? The fastest way to combat this threat is to recognize it, and then take immediate action. Weve outlined some of the common signs of phishing, as well as some powerful and easy-to-use tools for you to fortify your Outlook account. Dont forget the importance of layered protection against spam, malware, phishing and ransomware. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, security_best_practices",
+    "usage": {
+      "prompt_tokens": 227,
+      "completion_tokens": 207,
+      "total_tokens": 434
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

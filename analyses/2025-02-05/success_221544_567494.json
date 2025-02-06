@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:15:43.363247",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 22, 2019 10 Step Compliance Plan for CCPA October 22, 2019 Are you ready for January 1, 2020? Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "compliance_certifications",
+    "usage": {
+      "prompt_tokens": 156,
+      "completion_tokens": 344,
+      "total_tokens": 500
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

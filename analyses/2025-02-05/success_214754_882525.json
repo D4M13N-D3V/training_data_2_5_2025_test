@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:46:49.833969",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day December 24, 2019 Surveys in Data Governance  Is There Room For Them? December 24, 2019 For companies aiming to be in full compliance with the CCPA when the law is enacted on January 1st, data governance, data mapping, and data inventory should be at the forefront of priorities. These processes are essential to any compliancy initiative  but what happens when they are unreliable, and data maps Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "compliance_certifications,technical_documentation,data_protection",
+    "usage": {
+      "prompt_tokens": 210,
+      "completion_tokens": 236,
+      "total_tokens": 446
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

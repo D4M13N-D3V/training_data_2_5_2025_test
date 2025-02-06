@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:23:24.709448",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 3, 2021 Discord Attack Targets NFT Projects November 3, 2021 Multiple Targets Discord AdministratorsModerators and NFT project members were targeted today in a well-planned social engineering attack. Attackers managed to take over sessions of some privileged Discord accounts and used them to send messages to serversusers in Discord. Since the messages and announcement came from moderators accounts, it is likely Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "access_management, incident_response, threat_prevention",
+    "usage": {
+      "prompt_tokens": 203,
+      "completion_tokens": 448,
+      "total_tokens": 651
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

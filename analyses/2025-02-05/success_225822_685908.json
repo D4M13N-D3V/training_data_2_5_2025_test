@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:58:08.449256",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day May 4, 2018 GDPR Security  Breaches What You Must Know May 4, 2018 GDPR Security  Breaches What You Must Know According the 2017 Ponemon Cost of Data Breach Study, the global average cost of a data breach is 3.2 million. The good news that cost is down 10 over previous years. The bad news companies in the study have experienced larger breaches an Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 208,
+      "completion_tokens": 316,
+      "total_tokens": 524
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T19:29:37.006436",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day August 9, 2021 DATA443 SIGNS LETTER OF INTENT TO ACQUIRE RANSOMWARE PROTECTION INNOVATOR, CENTURION TECHNOLOGIES August 9, 2021 With over 3,000,000 seats sold in all regions of the world, Centurion Technologies patented ransomware generated unaudited revenues of nearly 1MM in 2020 and net positive cash from operations RESEARCH TRIANGLE PARK, NC, Aug. 09, 2021  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, data_protection, threat_prevention, privacy_policy",
+    "usage": {
+      "prompt_tokens": 247,
+      "completion_tokens": 790,
+      "total_tokens": 1037
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

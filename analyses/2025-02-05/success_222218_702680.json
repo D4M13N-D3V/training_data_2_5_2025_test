@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:20:43.314608",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Exciting New Way to Authenticate on Android 7 phones  Resilient is Ready! March 4, 2019 Resilient Network Systems believes FIDO2WebAuthN has the potential to dramatically improve the security and privacy of identity on the web, while dramatically simplifying the users task of registering and authenticating their identity. WebAuthN became an official WC3 Standard today , March 4, 2019, and FIDO2 is achieving broad industry endorsement and support from Mozilla, Google, Microsoft and Apple for both browsers and OSs. Our Product, Resilient Access makes it simple for websites or applications to support many authentication techniques, including FIDO2WebAuthN. Soon after Google announced their first mobile device FIDO2WebAuthN authenticator we were keen to use it to secure a users identity on their Android 7 device. This successful test is the latest in a series interoperability tests related to these standards Firefox, Chrome, Edge, U2F hardware, etc.. We are excited to see what is next and we will support that as well. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Compliant Productivity Embracing Millennial Communication Tools While Maintaining Compliance Why Office 365 Archiving might not be enough to keep you compliant Published More ShareEdit Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,access_management,compliance_certifications,data_protection",
+    "usage": {
+      "prompt_tokens": 389,
+      "completion_tokens": 505,
+      "total_tokens": 894
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

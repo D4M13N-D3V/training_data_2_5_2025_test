@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:06:26.992077",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Black FridayCyber Monday Alert 5 Shopping Scams That Could Seriously Affect Your Business November 21, 2017 The last thing any company needs during the holiday season is the gift of ransomware on its IT systems. During this weeks build-up to Black Friday, Cyber Monday, and the actual holidays remember those?, everyone is going to spend some time doing a little shopping while on a company device or network, especially if it means scoring a bargain. And cybercriminals are after their own form of bargain, using the general shopping hysteria to push malware and phishing campaigns. Here are 5 common types of holiday shopping scams you should watch out for, as categorized by Cyren researchers Hot Gift Discount Coupons You can be sure that hackers know the hottest holiday gift trend and will use it to entice your employees into opening an attachment that looks like a coupon for 50 off the latest smart phone, but really contains a malware downloader. Phony Delivery  Payment Notifications A FedEx package has arrived! Just click this link to give us your address and other details. Cybercriminals phish or deliver malware very effectively by mimicking extremely well the types of emails we are eagerly anticipating during the holidays. Fake Ecommerce Websites A link advertising deep discounts on tablets, such as discount-iPads.us appears in inboxes. Click on the link and an employee is taken to a website that looks like it is selling iPads  but instead is capturing personal information and credit card data. Ransomware Holiday E-cards Click here to get your holiday e-card! One click and your employees have begun a malware download that locks all your systems down with ransomware until you pay the several thousand dollars in ransom! Holiday Malvertising Criminals are posting advertising links on Facebook or Twitter or even fake ads on legitimate websites to get users to click. Win a free Xbox game console by simply registering with your personal information! Once the victim clicks, they are redirected to a website that downloads malware or attempts to grab the victims personal information. Rest Easier During The Holidays Obviously caution employees to not click on attachments or unusual links, but the fact is that some criminals have social-engineered these emails extremely well and spoofed sites to the point that they look amazingly real. To rest easier during the holidays, deploy strong cloud-based Email Security and Web Security Gateways that prevent threats from reaching users in the first place. Want to learn more about how Cyrens security cloud can protect your business? Contact us here ! Try it for Free Instant Data Classification Cyren URL Category Chacker Prev How Do You Know Your Email Security Is Working? 10 Cyber Threat Terms Every IT Manager Should Know Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, security_best_practices, threat_prevention",
+    "usage": {
+      "prompt_tokens": 654,
+      "completion_tokens": 367,
+      "total_tokens": 1021
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

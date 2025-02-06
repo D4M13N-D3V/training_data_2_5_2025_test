@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:20:41.049011",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Data443 vs Progress Software Comparing MFT Solutions Company Overview Progress Software Corporation specializes in developing business application software. Progress focuses on solutions that enable businesses to build, deploy, and manage applications with an emphasis on security, aiming to contribute to business growth and success. Progress has many unrelated product lines and has unfortunately had its MOVEit product line suffer a large vulnerability which has affected many customers. GAP analysis Pricing  Access Integration  Compatibility Security  Compliance Efficiency  Features Deployment  Options Technology  Performance Free Trial Quotation-based Subscription-based Server based Pricing Demo Data443 Risk Mitigation Inc. Yes Yes No No Yes Progress Software Yes Yes No No No Cross-Platform Support Legacy Systems Integration Server Compatibility Mulesoft iPaaS Integration Integration with Authentication Systems Supported Protocols Virtual Folders Admin Tools File Management Implementation Options Data443 Risk Mitigation Inc. Yes Yes Yes No Yes Yes Yes No Yes No Progress Software Yes No No No Yes Yes No No Yes No Secure Managed File Transfer Compliance Maintenance Data Security Secure FTP Server Regulatory Compliance End-to-End Encryption Two-Factor Authentication Secure Protocols Security Best Practices Threat Mitigation MOVEit Cloud MOVEit Transfer MOVEit Automation DMZ Proxy Gateway Security-Hardened Transfers SecureTransport Transfer CFT Host Key Support Authentication File Sharing and Protection Data443 Risk Mitigation Inc. Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes No No No Yes Yes No No Yes No Yes Progress Software Yes Yes No Yes Yes Yes No Yes Yes Yes No No No No Yes No No No No Yes Operational Efficiency Scalability Customization 247 Customer Support Industry Commitment Task Automation Cost-Effective Solution Secure Collaboration and Mobility Comprehensive Solution Unified Interface Intuitive Interface Eliminates Custom Programming Additional Modules Visibility Auditing Reporting Folder Monitoring Collaboration with Workspaces Analytics Visibility and Control Consolidated Platform Governance High Availability Reliable Movement Proven Expertise File Transfer Options Simplicity Flow Manager Intelligent MFT Headless Operations and API Delivery Accelerators and Expertise Automation and Flexibility Clustering Support Distributed Architecture Failover and Load Balancing Cluster Control ActiveActive or ActivePassive Configurations Account Controls HALoad Balancing Data443 Risk Mitigation Inc. Yes Yes Yes Yes Yes Yes No No Yes Yes Yes Yes No No Yes Yes Yes Yes No Yes Yes Yes Yes No Yes Yes No No Yes No No No No No No No No Yes No Progress Software No No No No No Yes Yes Yes Yes Yes No No No No No No No No No No Yes Yes No No Yes Yes No No Yes No No No No No No No No No No On-Premise Solution Cloud-Based Offering Hybrid Cloud Support Versatile Deployment Platform Compatibility Mobile Managed File Transfer Installation Options Managed File Transfer Solution Flexible Options Data443 Risk Mitigation Inc. Yes Yes No No Yes Yes No Yes Yes Progress Software Yes Yes Yes No Yes Yes No Yes Yes Unrivaled Speed FASP Protocol Mobile Access and Collaboration Data443 Risk Mitigation Inc. No No Yes Progress Software No No Yes Source Links Source Links              Integrations Oracle Salesforce ServiceNow Azure WordPress AWS Snowflake OpenEdge Others Supported Systems Windows Server 2003 x64 Edition, Telerik, Ipswitch, Chef, Kemp, Flowmon SQL Server 2008 R2 Supported systems matrix for SQL Server 2008 Windows XP Professional x64 Edition Windows 98, Windows 2000, Windows Me, Windows NT, Windows XP, and Windows Server 2003 32-bit You might also find it interesting Managed File Transfer by Data443 Complete Competitive Analysis Learn More Download PDF If you have any discrepancies or suggestions, please use the form to submit any corrections or recommendations. Your feedback is valuable to us. Submit Corrections Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, compliance_certifications, data_protection, access_management, threat_prevention, security_best_practices",
+    "usage": {
+      "prompt_tokens": 841,
+      "completion_tokens": 370,
+      "total_tokens": 1211
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

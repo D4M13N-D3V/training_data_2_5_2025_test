@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:20:41.467654",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day September 23, 2020 SendGrid  Mailchimp Phishing Attacks How Scammers Leverage Email Delivery Services To Their Advantage September 23, 2020 Lately, among the myriad phishing attacks we observe and detect via Cyren Inbox Security, attacks that are distributed via email delivery services like SendGrid, MailChimp, and MailJet are increasingly common. How Attackers Take Advantage of Email Delivery Platforms Email magnitude  Email delivery services dont usually limit the total Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention",
+    "usage": {
+      "prompt_tokens": 216,
+      "completion_tokens": 294,
+      "total_tokens": 510
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

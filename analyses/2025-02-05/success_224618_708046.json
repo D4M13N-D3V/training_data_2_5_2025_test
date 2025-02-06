@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:46:18.166650",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day December 9, 2018 PIPEDA December 9, 2018 The Personal Information Protection and Electronic Documents Act PIPEDA has been law for quite some time, but new federal data breach and compromise notification requirements went into effect November 1st, 2018. PIPEDA applies to all organizations that are federally regulated and fall under legislative authority of the Parliament of Canada, along Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, incident_response, compliance_certifications",
+    "usage": {
+      "prompt_tokens": 202,
+      "completion_tokens": 149,
+      "total_tokens": 351
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:37:51.864055",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo You Should Enlist Your Employees in Threat Detection May 12, 2020 Your employees instincts are incredibly valuable and can help you crowdsource threats. With Cyren Inbox Security , theyre one click away from flagging an email as suspicious, and telling Cyren to search for lookalike emails in the system. How IDRs leverage user data Though its often positioned as the last line of defense against phishing, Inbox Detection and Response IDR security layers can gather unique threat intelligence from your employees. The IDR collects critical feedback from its vantage point in all your users Microsoft 365 mailboxes. When users interact with the IDR intelligence engine, such as flagging suspicious emails, machine-learning algorithms incorporate their feedback. Over time, the IDR engine gets smarter, enriched by the instincts and critical thinking of your front-line employees. Related Block Evasive Phishing with Email Security Defense-in-Depth UX matters If you want to crowdsource threats from your employee base, it has to be easy. The best solutions Engage users inside their inbox, where the threat is. Apply warnings or banners across suspect emails so users dont reflexively click links or open attachments. Require minimal clickstime. Clicks are frustrating ! Are always visible and top of mind. Make it dead simple to submit suspect emails for review. More than the sum of its parts Crowdsourcing threat intelligence is a powerful way to involve employees in self-security and to relieve the burden on IT As employees submit more emails for review, the engine becomes even more effective over time. IDRs reinforce user training so you get better ROI from security training programs. When employees provide feedback directly within the IDR, they reduce the burden on the IT help desk. Phishing attacks can target hundreds or thousands of employees. When threats are discovered, an IDR can scan your entire user base and remove suspicious messages from all infected mailboxes across the organization. Cyrens approach to crowdsourcing threat intelligence Cyren Inbox Security includes a simple-to-install and -use Outlook plugin that helps Microsoft 365 users identify phishing attacks. A prominent button in Outlook lets users click-to-scan any suspicious email, and receive immediate results. If the response is negative and the user disagrees, the user can simply click to send the email to the Cyren Security Lab for review. All forensics data from crowdsourced intelligence is incorporated in the system and made available for further investigations. Cyren also provides a 247 managed Threat Response Service TRS for users of Cyren Inbox Security. Cyren TRS is laser-focused on investigating, analyzing, and resolving threats reported by your users. If Cyren reclassifies an email as suspicious, it will be automatically removed from all user mailboxes in your organization. With daily processing of more than 25 billion transactions from Cyren customers and technology partners, we leverage our global visibility to the advantage of every Cyren Inbox Security user. To learn more about Cyren Inbox Security visit  Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Covid-19 Exposes a Newly Remote Workforce to More Evasive Phishing Attacks Canadian Phish Kits Reactivated as Tax-filing Deadlines are Moved Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, data_protection, access_management",
+    "usage": {
+      "prompt_tokens": 754,
+      "completion_tokens": 332,
+      "total_tokens": 1086
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

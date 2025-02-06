@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:36:51.305845",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo New Threat Report Everything you need to know about botnets January 5, 2017 Cyren announces the release of the comprehensive cybersecurity report Botnets The Clone Army of Cybercrime . This detailed look at a fundamental component of cybercrime infrastructure covers a wide range of botnet-specific topics, ranging from the basics of botnet architecture to in-depth analyses of botnet creation and evasion techniques. Report highlights include A new, Cyren-identified, detection evasion technique which Cyren researchers are calling Ghost Hosts whereby, botmasters fool web security and URL filtering systems by changing the domain names, inserting non-malicious host names into the HTTP host field. A day in the life of the botnet that wont dieNecurswhere Cyren researchers present a detailed chronology of the first 24 hours in the life of a Necurs bot. An interview with Cyren expert and botnet hunter Geffen Tzur, offering insight into the cat-and-mouse world of botmasters and cybersecurity professionals. Tips for IT professionals on how to prevent and detect botnet threats , an in-depth look at how criminals use botnets, and an infographic overview of the evolution of botnets over the last thirty years. With articles on many other botnet topics, the report also leverages data gleaned from Cyrens GlobalView TM Intelligence Cloud, including comprehensive data on worldwide zombie locations and ransomware CC server locations. Want to learn more about cloud-delivered web security? Contact us here ! Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Yuletide spam and shopping scams breaking records The Rise of Botnets Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, security_best_practices, data_protection, threat_prevention",
+    "usage": {
+      "prompt_tokens": 448,
+      "completion_tokens": 416,
+      "total_tokens": 864
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

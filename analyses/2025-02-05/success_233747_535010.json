@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:36:52.212665",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 8, 2016 3 Reasons You Need a Virtual Data Room November 8, 2016 3 Reasons You Need a Virtual Data Room The top performing businesses in 2016 will perfect the art of connection  in fact, this economy has been labeled the Connection Economy. Consider the largest taxi company doesnt own a car Uber the largest hotel chain doesnt own a building AirBnB and the Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 205,
+      "completion_tokens": 301,
+      "total_tokens": 506
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

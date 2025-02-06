@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:20:37.729250",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day October 13, 2021 Cyren Incident Response Service CIRS for Email Threat Protection October 13, 2021 Email threats are always evolving. As email has become crucial to business communications, hackers have found new ways to use email in order to breach corporate security. From routine email threats such as viruses and spam to more advanced such as phishing, spear-phishing, and wire transfer phishing, organizations need to take email Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "incident_response,threat_prevention,product_security_features,end_user_security",
+    "usage": {
+      "prompt_tokens": 207,
+      "completion_tokens": 274,
+      "total_tokens": 481
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

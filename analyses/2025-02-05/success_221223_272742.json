@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:12:22.995349",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day March 18, 2021 Office 365 Phishing Email Campaign Hides Excel Template in HTML March 18, 2021 Phishing remains one of the most popular types of corporate attacks in terms of its prevalence, and therefore it is not surprising that attackers are coming up with increasingly sophisticated methods to obtain the victims personal data. Signs of an Office 365 Phishing Attack A Warning from Microsoft The Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "end_user_security, threat_prevention",
+    "usage": {
+      "prompt_tokens": 203,
+      "completion_tokens": 243,
+      "total_tokens": 446
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

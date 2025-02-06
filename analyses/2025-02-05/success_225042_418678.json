@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:49:44.737845",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day August 29, 2018 Why Choose Integrated Email Security and Archiving? August 29, 2018 Email archiving has grown in popularity in the last fifteen years and is now a multi-billion dollar market. It has evolved from an essential on-premises product for highly regulated industries to mainstream adoption in the cloud. For organisations replacing or deploying new archiving solutions today there are many choices of Warum sich f\u00fcr Integrated E-Mail Security und Archiving entscheiden? August 29, 2018 E-Mail- Archiving wurde in den letzten 15 Jahren zunehmend beliebter und stellt mittlerweile einen Multi-Milliarden-Dollar-Markt dar. Es hat sich vom wichtigen On-Premises- Produkt f\u00fcr stark reglementierte Branchen zu einem Produkt f\u00fcr einen breiter gef\u00e4cherten Einsatz in der Cloud entwickelt. F\u00fcr Unternehmen, die heute neue Archiving-L\u00f6sungen ersetzen oder implementieren, gibt es Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, data_protection",
+    "usage": {
+      "prompt_tokens": 317,
+      "completion_tokens": 329,
+      "total_tokens": 646
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "content": "The system stores user passwords in plaintext in the database and logs them to debug.log during authentication attempts.",
+    "categories": ["data_security", "authentication", "logging"],
+    "timestamp": "2024-02-06T00:27:00Z"
+}

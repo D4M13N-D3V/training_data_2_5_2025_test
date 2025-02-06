@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:26:58.671258",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day April 4, 2018 Have Email Threats Finally Worn Down IT Professionals? 80 Opinions on the State of Email Security April 4, 2018 Cyren recently gathered opinions from the Spiceworks IT community membership about the state of email security. We received almost 80 responses and were surprised at what appears to be a general feeling that the respondents are losing the battle against email threats. This comment from CJ Wood, catches this perfectly Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention,end_user_security",
+    "usage": {
+      "prompt_tokens": 215,
+      "completion_tokens": 311,
+      "total_tokens": 526
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

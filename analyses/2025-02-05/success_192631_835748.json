@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T19:21:52.296130",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Anatomy of an Attack Evasive Zoom phishing campaign using multiple phishing techniques at once December 14, 2020 Anatomy of an Attack Evasive Zoom phishing campaign using multiple phishing techniques at once In the final days of November, Cyren Inbox Security detected a massive phishing attack with a fake Microsoft 365 login page. Interestingly, they used many techniques to make the attack more evasive. Related Microsoft reports a leap in attack sophistication The Attack On Thursday, November 26, at 0951 UTC, an immense phishing campaign started targeting more than two thirds of the organizations using Cyren Inbox Security at once. It became one of the biggest malicious attacks in November by the number of phishing emails totally distributed. The emails were sent as if from a Zoom account ,while spoofing the target organizations domain as a sender domain. This made the email look trustworthy, as if it was sent internally inside the enterprise. But once checking the authentication results, the sender mail address was spoofed dkimfail no key for signature dmarcfail failure in both SPF and DKIM compauthfail reason601 marked by Office365 ATP as spoofed. Attackers used the SendGrid infrastructure for emails to reach the maximum number of victims mailboxes sender IP is 168.245.36.62, which is a SendGrid mail server. The email itself contained a message urging the recipient to Review a video conferencing invitation. In order to review invitation the target would click on the phishing URL hxxpsemail.utest.comlsclick?upn under the button. This query opened a fake Microsoft 365 login page hosted on an appspot.comdomain. Example of the phishing landing page hxxpscebxbhilakscgyzdcjdilniduq-dot-chrome-backbone-296016.uc.r. appspot.com ?utm_campaignwebsiteutm_sourcesendgrid.comutm_mediumemail The phishing was distributed by abusing a high-Alexa uTest domain , which redirected to the URL with auto-generated subdomains hosted on another high-Alexa domain appspot.com. Each URL contained sendgrid.com as a UTM source, which attackers could misuse to visualize and measure the impact of the sent emails on the potential victim. This phishing attack combined several techniques abusing the high-Alexa popular domains utest.com and appspot.com leveraging SendGrid infrastructure spoofing the target enterprises domain as mail sender, which made it easier for the phishing emails to by-pass the existing security email filtering capabilities. Cyren Inbox Security Detection With Cyren Incident Response Service and its 247 support for phishing investigation, the attack was rapidly investigated and all the emails related to the attack were appropriately classified as phishing for all the Cyren Inbox Security customers. Learn more about Cyren Inbox Security  Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Phishing hosted on high Alexa domains another dangerous trick in Web Anatomy of a Malware Attack Emails with Password-Protected Files Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, threat_prevention, incident_response",
+    "usage": {
+      "prompt_tokens": 713,
+      "completion_tokens": 386,
+      "total_tokens": 1099
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

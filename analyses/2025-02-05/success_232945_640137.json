@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:29:45.247879",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Cyren Adds Email Archiving To SaaS Security Platform October 23, 2017 The Cyren Email Archiving service protects business messages and simplifies regulatory compliance. The service is offered as part of Cyrens enterprise security platform, which integrates web security, email security, DNS security, cloud sandboxing and now, email archiving, on a single globally-operated Security-as-a-Service platform. Our customers value our cloud expertise and are asking us to provide complementary services around email management, said Lior Kohavi, Cyren CTO. Cyrens 100 cloud-based security platform allows us to quickly roll out new services and capabilities to protect our global customer base and meet their wider needs, with speed and agility that simply isnt possible with appliance-based infrastructures. Product Highlights Cyrens email security and archiving services, fully integrated on Cyrens global security platform, simplify regulatory compliance with email management, protection and retention in the cloud. The latest release includes Fast search and eDiscovery  provides an easy to use search and eDiscovery toolset that returns searches in less than two seconds, enabling governance, risk and compliance and legal teams to complete freedom of information and subject access requests in minutes. Tamper-proof storage  inbound, outbound and internal emails are saved in tamper-proof storage with audited user access to ensure email integrity for litigation purposes. Ease of use  simplified user mailbox management removes the need for complex email filing, PST management and mailbox size control. Cyren Email Archiving can be easily activated as part of any Cyren Email Security subscription. Cyren offers a free 30-day trial. Request yours today . Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Malware Goes Currency Mining with Your CPU Cyren erg\u00e4nzt die SAAS-Security- Plattform durch E- Mail-Archiving Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, compliance_certifications, data_protection",
+    "usage": {
+      "prompt_tokens": 490,
+      "completion_tokens": 269,
+      "total_tokens": 759
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

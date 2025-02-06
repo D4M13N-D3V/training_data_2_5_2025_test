@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:37:58.515887",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Office 365 Antivirus Solution Catch and Contain Evasive Malware with Cyren Inbox Security February 14, 2022 Malware threats are known to continually grow in both their volume and complexity. Email-borne malware, especially that sent via Office 365 , remains a large threat. The social engineering tactics convince recipients to open and unknowingly execute harmful attachments . Cyren Inbox Security provides enterprises the ultimate threat defense capability combined with risk-based analysis of suspicious attachments and automated incident response. Utilizing cloud-based pattern detection combined with multi-layer file scanning, this dual approach ensures malware detection from the zero-hour of an outbreak through any stage of the malware lifecycle. Benefits of Cyren Inbox Security for Antivirus Advanced Cloud Pattern Malware Detection Our patented cloud-based Recurrent Pattern Detection RPD technology can analyze billions of emails every day in order to detect malware outbreaks as they happen. Malware outbreaks distributed via email share identifiable patterns that include elements such as the senders IP addresses , combinations of characters in the subject or body, and the code in attached malware . Multi-layer File Scanning Cyrens Anti-Spam engine provides multiple layers of file-based malware detection including Basic and emulator-based heuristics Scanning methods that are algorithmic and use an internal detection language Signature-based scanning for exact malware file identification Emulation for encrypted and polymorphic virus detection Why Use Cyrens Email Security Engine? Cyrens Email Security Engine for Office 365 has many different benefits, which include High catch rates that utilize our dual detection approach for email-borne malware. Enhanced customer satisfaction because of real-time protection from email-borne malware with few false positives. Increased revenue , which is created by adding a premium messaging security solution to your current offerings. Lower TCO by working with a single vendor. How Does Cyrens Email Security Engine Work for Antivirus Detection? Email Security Engine can be integrated into vendor devices or service provider environments. From there, an email attachment query is sent by the Mail Transfer Agent MTA or security device to Cyrens security engine. This results in a combined response from the detected pattern and scanned files. This allows the requester to then delete malware attachments and emails  forwarding clean emails to their intended recipients. Integration options include comprehensive SDKs, daemons, and a range of plugins and filters. Cyrens anti-malware engine is flexible and allows integration into the thinnest hardware platforms. It also allows for large-scale carrier-grade deployments. The same engine can be expanded to include additional services such as Anti-Spam or Malware Attack Detection. Our partners gain important technological, operational, and financial advantages by combining multiple security services into a single-engine and framework. Final Thoughts Read the data sheet and learn how to use Cyrens Email Security Engine Anti-Virus with your Office 365 products, today. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev The Cost of NOT Getting Phished Inbound Anti-Spam Solution Catch Outbreaks with Cyren Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features, end_user_security, data_protection, threat_prevention, incident_response, technical_documentation",
+    "usage": {
+      "prompt_tokens": 718,
+      "completion_tokens": 385,
+      "total_tokens": 1103
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

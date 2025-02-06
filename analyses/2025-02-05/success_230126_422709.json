@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:01:19.176670",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day August 4, 2022 Email Hijacking Delivers Qakbot Malware August 4, 2022 Introduction Originally a banking Trojan that existed in the wild as early as 2007, Qakbot or QBot is a pioneer of malware as a service, which is continually maintained and developed to this day. While its main purpose is to steal banking credentials such as logins and passwords, it has Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "threat_prevention, technical_documentation",
+    "usage": {
+      "prompt_tokens": 206,
+      "completion_tokens": 201,
+      "total_tokens": 407
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "timestamp": "2025-02-05T20:42:28.910254",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day November 5, 2020 DATA443s LEADING DATA TRANSPORT PRODUCT, DATAEXPRESS, RELEASES 2FA INTEGRATION WITH GOOGLE AUTHENTICATOR November 5, 2020 Addresses Market Need for Two Factor Authentication Services  Already Deployed and Active Within Commercial Customer Environments RESEARCH TRIANGLE PARK, NC, Nov. 05, 2020  Data443 Risk Mitigation, Inc. Data443 or the Company OTCPK ATDS, a leading data security and privacy software company, is pleased to announce the official release Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "error": {
+    "type": "HTTPError",
+    "message": "401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions",
+    "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\distill_test_openrouter.py\", line 177, in _generate_response\n    response.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\Damie\\Data443\\test\\llm\\venv\\Lib\\site-packages\\requests\\models.py\", line 1024, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://openrouter.ai/api/v1/chat/completions\n"
+  }
+}

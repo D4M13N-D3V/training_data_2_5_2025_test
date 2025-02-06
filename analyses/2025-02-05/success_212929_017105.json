@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T21:29:10.226325",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Defense in depth Demo Get A Personal PoC For Yourself! Overview Delivery IP Reputation Malware File Malware URL Phishing and Fraud URL Directly integrate our global intelligence on malicious URLs, IP addresses, and files into your environment for enhanced awareness and protection. Malware File and URL Intelligence Real-time information about ongoing and emerging malware threats Analyze millions of suspicious files to detect hundreds of thousands of new malicious files daily Contextual information includes malware family and relationships to IP addresses, download URLs, and other IOCs Datasheet Phishing and Fraud URL Intelligence Visibility of over 1 Billion URLs each day. Analyze URLs strings and web content to detect zero day and other phishing attacks. Over 9,000 new phishing URLs per day Context includes brand and industry information and is correlated to IP addresses that host the pages and files that contain phishing links Datasheet IP Intelligence Analyze billions of web and email transactions in real-time to expose high-risk IP addresses that serve spam, phishing, and malware Apply unique technologies and algorithms to quickly identify botnets and zombie hosts, and their activity Contextual information includes threat intensity, risk score, geolocation, and relationships to other threats Datasheet Our intelligence feeds are designed to be highly accessible and customizable, catering to various organizational needs through both API and FTP delivery methods. The uniform JSON data structure ensures easy integration and consistent analysis across different platforms. API Integration Access Method Secure access through HTTPS API. Updates Real-time, with flexibility in parameters such as offset and count to tailor the feed. Benefits Allows for immediate integration into existing systems for timely threat intelligence. FTP Delivery Types of Updates Daily Overview Snapshot Comprehensive daily summaries. Incremental Updates Delta Changes or updates since the last snapshot. Archive Files Historical data for deeper analysis. Data Structure Format Uniform JSON format across both API and FTP delivery methods. Content Includes Source details for pinpointing threats. Timestamps to track intelligence over time. Detection categories for clarity on the nature of threats. Relationships to understand connections between different intelligence points. Many more Watch the video below for a demonstration on integrating the IP Reputation API into your C code. Watch the video below for a demonstration on integrating the Malware File API into your Java code. Watch the video below for a demonstration on integrating the Malware URL API into your Python code. Watch the video below for a demonstration on integrating the Phishing and Fraud URL API into your JavaScript code. Contact us to learn how Cyren can power your defenses against email, malware, and web threats. Contact Us 30-day Evaluation Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "product_security_features,technical_documentation",
+    "usage": {
+      "prompt_tokens": 625,
+      "completion_tokens": 475,
+      "total_tokens": 1100
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

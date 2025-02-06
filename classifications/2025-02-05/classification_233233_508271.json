@@ -1,0 +1,10 @@
+{
+  "timestamp": "2025-02-05T23:32:33.508045",
+  "content": "Search Free Trial Get Demo Infosec Island When Is Apple.com Not Apple.com? May 2, 2017 To get up to speed on the latest technique used by phishing site operators to present legitimate-but-fake ! web sites, check out Cyren security researcher Magni Sigurdssons column in Infosec Island , which details how cybercriminals are exploiting a browser capability for representing non-Latin characters to make users think they really are at apple.com, or other trusted brands sites, and snagging their login credentials. As Magni explains in the article, the vulnerability is attributable to something called Punycode and affects Google Chrome, Mozilla Firefox and the Opera web browsers. It can be very hard to identify pages which are not the real thing without carefully inspecting the sites URL or checking the SSL certificate. By using, for example, the Cyrillic a, the attacker is able to make it appear in the address bar that you really are at the paypal.com which spells itself that way only with characters from the Roman alphabet. Enjoy Magnis analysis! payp\u1e01l.com that has already been blocked by Google. Try it for Free Instant Data Classification Cyren URL Category Chacker Prev Is Monday the Worst Day of the Weekfor Security? Google Docs Phishing Attack Worms Its Way In Next Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443",
+  "categories": [
+    "end_user_security",
+    "security_best_practices",
+    "threat_prevention"
+  ],
+  "raw_response": "end_user_security, security_best_practices, threat_prevention"
+}

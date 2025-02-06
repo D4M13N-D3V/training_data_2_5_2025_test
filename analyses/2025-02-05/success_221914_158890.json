@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:18:29.305359",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day December 9, 2020 DATA443 SECURES AGREEMENT FROM ITS LARGEST INVESTORS TO FORGO ALL NOTE CONVERSIONS FOR SIXTY DAYS December 9, 2020 Company Continues to Prepare for Up-list to Senior Exchange RESEARCH TRIANGLE PARK, NC, Dec. 09, 2020  Data443 Risk Mitigation, Inc. OTCPK ATDS, the leading data security and privacy software company for ALL THINGS DATA SECURITY, is pleased to announce an agreement with four of the Companys largest investors under Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 235,
+      "completion_tokens": 315,
+      "total_tokens": 550
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

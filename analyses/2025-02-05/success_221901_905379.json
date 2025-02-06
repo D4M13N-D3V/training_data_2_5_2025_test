@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T22:18:26.982078",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day January 9, 2025 Email Archiving and Discovery for Legal and Privacy Requests January 9, 2025 Government agencies and organizations must handle a growing volume of legal and privacy-related requests such as FOIA. Many are using email archiving solutions to meet these needs but outdated technology can introduce significant bottlenecks and prevent them from responding quickly and accurately. Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "data_protection, privacy_policy",
+    "usage": {
+      "prompt_tokens": 195,
+      "completion_tokens": 445,
+      "total_tokens": 640
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}

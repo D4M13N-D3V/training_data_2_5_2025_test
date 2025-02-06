@@ -1,0 +1,26 @@
+{
+  "timestamp": "2025-02-05T23:32:01.396515",
+  "model": "deepseek/deepseek-r1-distill-llama-70b",
+  "request": {
+    "messages": [
+      {
+        "role": "system",
+        "content": "You are a cybersecurity expert specializing in company websites and product documentation.\n        Analyze the content and classify it into the given categories.\n        Return only the applicable categories as a comma-separated list, nothing else."
+      },
+      {
+        "role": "user",
+        "content": "\n        Categories to choose from:\n        product_security_features, end_user_security, compliance_certifications, security_best_practices, data_protection, access_management, threat_prevention, incident_response, privacy_policy, technical_documentation\n        \n        Content to classify:\n        Search Free Trial Get Demo Day September 7, 2017 Best Practices for Stopping Ransomware September 7, 2017 With the recent return of Locky and continued growth of ransomware and ransomware-as-a-service, there is a good chance you personally know an individual or company that has experienced such an attack or another similar threat. If you work in the computer or security industry, you might also often be asked Company Partners Resources Investor Relations Products Freeware Demo Solutions Contact Us Privacy Management Service by Data443\n        "
+      }
+    ],
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  },
+  "response": {
+    "content": "security_best_practices, threat_prevention",
+    "usage": {
+      "prompt_tokens": 203,
+      "completion_tokens": 302,
+      "total_tokens": 505
+    },
+    "model": "deepseek/deepseek-r1-distill-llama-70b"
+  }
+}
